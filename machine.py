@@ -39,8 +39,8 @@ class DataPath:
         self.latched_data = self.data_memory[self.alu_res]
 
     def signal_output_write(self):
-        symbol = chr(self.acc)
-        print(symbol, end="") if self.acc else print("", end="")  # для hello и cat
+        symbol = chr(self.acc) if (chr(self.acc).isascii() and self.acc > 34) else str(int(self.acc))
+        # print(symbol, end="") if self.acc else print("", end="")  # для hello и cat
         # print(self.acc) if self.acc else print("", end="") # для prob
         self.output_buffer.append(symbol)
 
@@ -114,7 +114,12 @@ class ControlUnit:
             do()
             print(log, file=open("log.txt", mode="a"))
             print(self, file=open("log.txt", mode="a"))
-            print(self.data_path.data_memory, file=open("log.txt", mode="a"))
+            print("|" +
+                  " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in self.data_path.data_memory]) +
+                  "|", file=open("log.txt", mode="a"))
+            print("|" +
+                  " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in range(len(self.data_path.data_memory))]) +
+                  "|", file=open("log.txt", mode="a"))
 
     def current_tick(self):
         return self._tick
@@ -400,7 +405,7 @@ class ControlUnit:
     def __repr__(self):
         """Вернуть строковое представление состояния процессора."""
         state_repr = (
-        "TICK: {:3} PC: {:3} ADDR: {:3} MEM_OUT: {} ACC: {} LG_ALU: {:3} RG_ALU: {:3} SP: {:3} ZF: {}".format(
+        "TICK: {:3} PC: {:3} ADDR: {:3} MEM_OUT: {} ACC: {} LG_ALU: {:3} RG_ALU: {:3} SP: {:3} ZF: {} |".format(
             self._tick,
             self.program_counter,
             self.data_path.data_address,
@@ -416,7 +421,8 @@ class ControlUnit:
         # opcode = instr["opcode"]
         # instr_repr = str(opcode)
 
-        return state_repr + "\t" + self.program[self.program_counter]["opcode"]
+        return (state_repr + "\t" + self.program[self.program_counter]["opcode"] +
+        (("   " + self.program[self.program_counter]["term"]) if "term" in self.program[self.program_counter] else ""))
 
 
 def simulation(code, input_tokens, data_memory_size, limit):
@@ -428,23 +434,19 @@ def simulation(code, input_tokens, data_memory_size, limit):
     try:
         while instr_counter < limit:
             control_unit.decode_and_execute_instruction()
-            instr_counter += 1
-            logging.debug("%s", control_unit)
+            # logging.debug("%s", control_unit)
     except EOFError:
         logging.warning("Input buffer is empty!")
     except StopIteration:
-        raise StopIteration
+        print("\nWell done!")
 
     if instr_counter >= limit:
         logging.warning("Limit exceeded!")
-    logging.info("output_buffer: %s", repr("".join(data_path.output_buffer)))
+    logging.info("output_buffer: %s", data_path.output_buffer)
     return "".join(data_path.output_buffer), instr_counter, control_unit.current_tick()
 
 
 def main(code_file, input_file):
-    """Функция запуска модели процессора. Параметры -- имена файлов с машинным
-    кодом и с входными данными для симуляции.
-    """
     code = eval(open(code_file).read().replace("null", "None"))
     with open(input_file, encoding="utf-8") as file:
         input_text = file.read()
@@ -455,7 +457,7 @@ def main(code_file, input_file):
     output, instr_counter, ticks = simulation(
         code,
         input_tokens=input_token,
-        data_memory_size=1000,
+        data_memory_size=400,
         limit=1000,
     )
 
@@ -465,6 +467,6 @@ def main(code_file, input_file):
 
 if __name__ == "__main__":
     logging.getLogger().setLevel(logging.DEBUG)
-    assert len(sys.argv) == 3, "Wrong arguments: machine.py <code_file> <input_file>"
-    _, code_file, input_file = sys.argv
-    main(code_file, input_file)
+    #assert len(sys.argv) == 3, "Wrong arguments: machine.py <code_file> <input_file>"
+    #_, code_file, input_file = sys.argv
+    main("out.txt", "in.txt")

@@ -581,8 +581,20 @@ def translate(expr):
                             return "$"
 
                     if isinstance(terms[2], list) and isinstance(terms[3], list):
+                        start_if = len(asm)
+                        asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": 0})
+
+                        start_2_addr = len(asm)
                         terms[2] = f(terms[2])
+                        asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": 0})
+                        finish_2_addr = len(asm) - 1
+
+                        start_3_addr = len(asm)
                         terms[3] = f(terms[3])
+                        asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": 0})
+                        finish_3_addr = len(asm) - 1
+
+                        asm[start_if]["addr"] = len(asm)
 
                         if isinstance(terms[1], list):
                             terms[1] = f(terms[1])
@@ -594,26 +606,27 @@ def translate(expr):
                                 {"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1]),
                                  "term": "if"})
 
-                        if terms[2] == "$" and terms[3] == "$":
-                            asm.append(
-                                {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 3,
-                                 "term": "if"})
-                            asm.append(
-                                {"opcode": "clean_head", "addr_mod": "nep_addr", "addr": None,
-                                 "term": "if"})
-                            asm.append(
-                                {"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) + 3,
-                                 "term": "if"})
-                            asm.append(
-                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
-                                 "term": "if"})
-                            asm.append(
-                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
-                                 "term": "if"})
-                            asm.append(
-                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
-                                 "term": "if"})
-                            return "$"
+                        asm.append(
+                            {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": start_2_addr,
+                             "term": "if"})
+
+
+                        asm.append(
+                            {"opcode": "jump", "addr_mod": "non_addr", "addr": start_3_addr,
+                             "term": "if"})
+
+                        finish = len(asm)
+                        asm.append(
+                            {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                             "term": "if"})
+                        asm[finish_2_addr]["addr"] = finish
+                        asm[finish_3_addr]["addr"] = finish
+
+                        asm.append(
+                            {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                             "term": "if"})
+
+                        return "$"
 
                     if isinstance(terms[2], str) and isinstance(terms[3], str):
                         if isinstance(terms[1], list):
@@ -671,6 +684,8 @@ def translate(expr):
                         if terms[1].strip("\'\"") in variables_numbers.keys():
                             asm.append({"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[1]],
                                         "term": "print"})
+                            asm.append({"opcode": "output", "addr_mod": "non_addr", "addr": 11,
+                                        "term": "print"})
                         elif terms[1].strip("\'\"") in variables_str.keys():
                             asm.append(
                                 {"opcode": "load", "addr_mod": "nep_addr", "addr": variables_str[terms[1]],
@@ -697,7 +712,7 @@ def translate(expr):
                                         "term": "print"})
                             asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
                                         "term": "print"})
-                            return
+                            return "$"
 
                         else:
                             if terms[1].isdigit():
