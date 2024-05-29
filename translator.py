@@ -513,37 +513,71 @@ def translate(expr):
                                 return "$"
                 case "if":
                     if isinstance(terms[2], str) and isinstance(terms[3], list):
-                        terms[2] = terms[2]
                         terms[3] = f(terms[3])
 
                         if isinstance(terms[1], list):
                             terms[1] = f(terms[1])
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
                         else:
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": terms[1]})
+                            asm.append(
+                                {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[1],
+                                 "term": "if"})
 
                         if terms[2] != "$" and terms[3] == "$":
-                            asm.append({"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": len(asm) + 4})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": terms[2]})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": len(asm) + 4,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
+                            if terms[2].strip("\'\"") in variables_numbers.keys():
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[2]],
+                                     "term": "if"})
+                            else:
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[2],
+                                     "term": "if"})
+                            asm.append(
+                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                 "term": "if"})
+
                             return "$"
 
                     if isinstance(terms[2], list) and isinstance(terms[3], str):
                         terms[2] = f(terms[2])
-                        terms[3] = terms[3]
 
                         if isinstance(terms[1], list):
                             terms[1] = f(terms[1])
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
                         else:
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": terms[1]})
+                            asm.append(
+                                {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[1],
+                                 "term": "if"})
 
                         if terms[2] == "$" and terms[3] != "$":
-                            asm.append({"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 4})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": terms[3]})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 4,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
+                            if terms[3].strip("\'\"") in variables_numbers.keys():
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[3]],
+                                     "term": "if"})
+                            else:
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[3],
+                                     "term": "if"})
+                            asm.append(
+                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                 "term": "if"})
+
                             return "$"
 
                     if isinstance(terms[2], list) and isinstance(terms[3], list):
@@ -552,43 +586,85 @@ def translate(expr):
 
                         if isinstance(terms[1], list):
                             terms[1] = f(terms[1])
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
                         else:
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1])})
+                            asm.append(
+                                {"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1]),
+                                 "term": "if"})
 
                         if terms[2] == "$" and terms[3] == "$":
-                            asm.append({"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 3})
-                            asm.append({"opcode": "clean_head", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) + 3})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 3,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "clean_head", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) + 3,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
+                            asm.append(
+                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                 "term": "if"})
                             return "$"
 
                     if isinstance(terms[2], str) and isinstance(terms[3], str):
                         if isinstance(terms[1], list):
                             terms[1] = f(terms[1])
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                 "term": "if"})
                         else:
                             if isinstance(terms[1], str):
                                 if terms[1] == "$":
-                                    asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                                    asm.append(
+                                        {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                         "term": "if"})
                                 else:
-                                    asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1])})
+                                    if terms[1].strip("\'\"") in variables_numbers.keys():
+                                        asm.append(
+                                            {"opcode": "load", "addr_mod": "abs_addr",
+                                             "addr": variables_numbers[terms[1]],
+                                             "term": "if"})
+                                    else:
+                                        asm.append(
+                                            {"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1]),
+                                             "term": "if"})
 
                         if terms[2] != "$" and terms[3] != "$":
                             asm.append({"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": len(asm) + 3})
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[3])})
-                            asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) + 2})
+                            if terms[3].strip("\'\"") in variables_numbers.keys():
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[3]],
+                                     "term": "if"})
+                            else:
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[3],
+                                     "term": "if"})
+                            asm.append(
+                                {"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) + 2,
+                                 "term": "if"})
 
                             if terms[2].strip("\'\"") in variables_numbers.keys():
                                 asm.append(
-                                    {"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[2]]})
+                                    {"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[2]],
+                                     "term": "if"})
                             else:
-                                asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": terms[2]})
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "nep_addr", "addr": terms[2],
+                                     "term": "if"})
 
                             # asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[2])})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                 "term": "if"})
                             return "$"
                 case "print":
                     if isinstance(terms[1], str):
