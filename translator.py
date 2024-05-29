@@ -669,37 +669,69 @@ def translate(expr):
                 case "print":
                     if isinstance(terms[1], str):
                         if terms[1].strip("\'\"") in variables_numbers.keys():
-                            asm.append({"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[1]]})
+                            asm.append({"opcode": "load", "addr_mod": "abs_addr", "addr": variables_numbers[terms[1]],
+                                        "term": "print"})
                         elif terms[1].strip("\'\"") in variables_str.keys():
-                            asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": variables_str[terms[1]]})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
-                            #
-                            asm.append({"opcode": "load", "addr_mod": "con_tos_addr", "addr": None})
-                            asm.append({"opcode": "output", "addr_mod": "non_addr", "addr": 11})
-                            asm.append({"opcode": "sub", "addr_mod": "nep_addr", "addr": 0})
-                            asm.append({"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": len(asm) + 5})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                            asm.append({"opcode": "add", "addr_mod": "nep_addr", "addr": 1})
-                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
-                            asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) - 7})
-                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                            asm.append(
+                                {"opcode": "load", "addr_mod": "nep_addr", "addr": variables_str[terms[1]],
+                                 "term": "print"})
+                            asm.append(
+                                {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                 "term": "print"})
+                            asm.append(
+                                {"opcode": "load", "addr_mod": "con_tos_addr", "addr": None,
+                                 "term": "print"})
+                            asm.append({"opcode": "output", "addr_mod": "non_addr", "addr": 11,
+                                        "term": "print"})
+                            asm.append({"opcode": "sub", "addr_mod": "nep_addr", "addr": 0,
+                                        "term": "print"})
+                            asm.append({"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": len(asm) + 5,
+                                        "term": "print"})
+                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                        "term": "print"})
+                            asm.append({"opcode": "add", "addr_mod": "nep_addr", "addr": 1,
+                                        "term": "print"})
+                            asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                                        "term": "print"})
+                            asm.append({"opcode": "jump", "addr_mod": "non_addr", "addr": len(asm) - 7,
+                                        "term": "print"})
+                            asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                                        "term": "print"})
                             return
 
                         else:
-                            asm.append(
-                                {"opcode": "load",
-                                 "addr_mod": "nep_addr",
-                                 "addr": int(terms[1]) if terms[1].isdigit() else ord(terms[1].strip("'\""))
-                                 }
-                            )
-                        asm.append({"opcode": "output", "addr_mod": "non_addr", "addr": 11})
+                            if terms[1].isdigit():
+                                asm.append(
+                                    {"opcode": "load", "addr_mod": "nep_addr", "addr": int(terms[1]),
+                                     "term": "print"})
+                                asm.append(
+                                    {"opcode": "output", "addr_mod": "non_addr", "addr": 11,
+                                     "term": "print"})
+                            else:
+                                assert TERMINATOR in terms[1], f"Строка без терминирующего символа '{TERMINATOR}'"
+                                for char in terms[1]:
+                                    asm.append(
+                                        {"opcode": "load", "addr_mod": "nep_addr", "addr": ord(char),
+                                         "term": "print"})
+                                    asm.append(
+                                        {"opcode": "output", "addr_mod": "non_addr", "addr": 11,
+                                         "term": "print"})
+
                     if isinstance(terms[1], list):
                         terms[1] = f(terms[1])
-                        asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
-                        asm.append({"opcode": "output", "addr_mod": "non_addr", "addr": 11})
+                        asm.append(
+                            {"opcode": "pop", "addr_mod": "nep_addr", "addr": None,
+                             "term": "print"})
+                        asm.append(
+                            {"opcode": "output", "addr_mod": "non_addr", "addr": 11,
+                             "term": "print"})
 
-                    asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": 1})
-                    asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None})
+                    asm.append(
+                        {"opcode": "load", "addr_mod": "nep_addr", "addr": 1,
+                         "term": "print"})
+                    asm.append(
+                        {"opcode": "push", "addr_mod": "non_addr", "addr": None,
+                         "term": "print"})
                 case "%":
                     if isinstance(terms[1], str) and isinstance(terms[2], str):
                         if terms[1].strip("\'\"") in variables_numbers.keys():
