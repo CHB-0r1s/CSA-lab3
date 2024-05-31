@@ -40,8 +40,6 @@ class DataPath:
 
     def signal_output_write(self):
         symbol = chr(self.acc) if (chr(self.acc).isascii() and self.acc > 34) else str(int(self.acc))
-        # print(symbol, end="") if self.acc else print("", end="")  # для hello и cat
-        # print(self.acc) if self.acc else print("", end="") # для prob
         self.output_buffer.append(symbol)
 
     def signal_inst_fetch(self, sel: SignalsALU):

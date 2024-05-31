@@ -21,6 +21,7 @@ def translate(expr):
     print(terms)
 
     asm = []
+    data = []
 
     variables_numbers = {}
     variables_str = {}
@@ -34,8 +35,9 @@ def translate(expr):
                     str_shift = max(variables_str.values()) if len(variables_str) else 0
                     num_shift = max(variables_numbers.values()) if len(variables_numbers) else 0
                     str_addr = max(str_shift, num_shift) + MAX_STR_LEN + 1
-                    asm.append({"opcode": "load", "addr_mod": "nep_addr", "addr": str_addr,
-                                "term": "read", "comment": "Init memory for string"})
+                    asm.append(
+                        {"opcode": "load", "addr_mod": "nep_addr", "addr": str_addr,
+                         "term": "read", "comment": "Init memory for string"})
                     asm.append({"opcode": "push", "addr_mod": "non_addr", "addr": None, "term": "read"})
                     asm.append({"opcode": "input", "addr_mod": "non_addr", "addr": 11, "term": "read"})
                     asm.append({"opcode": "store", "addr_mod": "con_tos_addr", "addr": None, "term": "read"})
@@ -795,7 +797,8 @@ def translate(expr):
                         asm.append({"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": start_while})
                     if isinstance(terms[1], list):
                         terms[1] = f(terms[1])
-                        asm.append({"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
+                        asm.append(
+                            {"opcode": "pop", "addr_mod": "nep_addr", "addr": None})
                         asm.append({"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": start_while})
 
         if isinstance(terms, tuple):
