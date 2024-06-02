@@ -3,8 +3,8 @@ import sys
 import typing
 
 from src import Opcode
-from src import (SignalsALU, SignalsLeftALU
-from src import SignalsRightALU, SignalsPC, AddrType)
+from src import SignalsALU, SignalsLeftALU
+from src import SignalsRightALU, SignalsPC, AddrType
 
 
 class DataPath:
