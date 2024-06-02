@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import logging
 import sys
 import typing
 
@@ -98,25 +97,28 @@ class ControlUnit:
     curr_command = {}  # Inst Decoder
     _tick = None
 
-    def __init__(self, program, data_path):
+    def __init__(self, program, data_path, log_file):
         self.program = program
         self.program_counter = 0
         self.data_path = data_path
         self._tick = 0
+        self.log_file = log_file
 
     def tick(self, operations: list[tuple]):
         self._tick += 1
         for operation in operations:
             do, log = operation
             do()
-            print(log, file=open("../log.txt", mode="a"))
-            print(self, file=open("../log.txt", mode="a"))
-            print("|" +
-                  " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in self.data_path.data_memory]) +
-                  "|", file=open("../log.txt", mode="a"))
-            print("|" +
-                  " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in range(len(self.data_path.data_memory))]) +
-                  "|", file=open("../log.txt", mode="a"))
+            print(log, file=open(log_file, mode="a"))
+            # print(log)
+            print(self, file=open(log_file, mode="a"))
+            # print(self)
+            # print("|" +
+            #       " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in self.data_path.data_memory]) +
+            #       "|", file=open(log_file, mode="a"))
+            # print("|" +
+            #       " ".join([" " * abs(len(str(i)) - 3) + str(i) for i in range(len(self.data_path.data_memory))]) +
+            #       "|", file=open(log_file, mode="a"))
 
     def current_tick(self):
         return self._tick
@@ -141,47 +143,47 @@ class ControlUnit:
             case Opcode.JMP:
                 self.signal_latch_program_counter(SignalsPC.INSTR_ADDR)
                 self._tick += 1
-                # print("ADDR -> PC")
+                print("ADDR -> PC", file=open(log_file, mode="a"))
                 return True
 
             case Opcode.JZ:
                 if self.data_path.zero():
                     self.signal_latch_program_counter(SignalsPC.INSTR_ADDR)
                     self._tick += 1
-                    # print("ADDR -> PC")
+                    print("ADDR -> PC", file=open(log_file, mode="a"))
                 else:
                     self.signal_latch_program_counter(SignalsPC.PC_INC)
-                    # print("PC + 1 -> PC")
+                    print("PC + 1 -> PC", file=open(log_file, mode="a"))
                 return True
 
             case Opcode.JNZ:
                 if not self.data_path.zero():
                     self.signal_latch_program_counter(SignalsPC.INSTR_ADDR)
                     self._tick += 1
-                    # print("ADDR -> PC")
+                    print("ADDR -> PC", file=open(log_file, mode="a"))
                 else:
                     self.signal_latch_program_counter(SignalsPC.PC_INC)
-                    # print("PC + 1 -> PC")
+                    print("PC + 1 -> PC", file=open(log_file, mode="a"))
                 return True
 
             case Opcode.JN:
                 if self.data_path.neg():
                     self.signal_latch_program_counter(SignalsPC.INSTR_ADDR)
                     self._tick += 1
-                    # print("ADDR -> PC")
+                    print("ADDR -> PC", file=open(log_file, mode="a"))
                 else:
                     self.signal_latch_program_counter(SignalsPC.PC_INC)
-                    # print("PC + 1 -> PC")
+                    print("PC + 1 -> PC", file=open(log_file, mode="a"))
                 return True
 
             case Opcode.JNN:
                 if not self.data_path.neg():
                     self.signal_latch_program_counter(SignalsPC.INSTR_ADDR)
                     self._tick += 1
-                    # print("ADDR -> PC")
+                    print("ADDR -> PC", file=open(log_file, mode="a"))
                 else:
                     self.signal_latch_program_counter(SignalsPC.PC_INC)
-                    # print("PC + 1 -> PC")
+                    print("PC + 1 -> PC", file=open(log_file, mode="a"))
                 return True
 
         return False
@@ -330,14 +332,14 @@ class ControlUnit:
                 ]
             case Opcode.IN:
                 return [
-                    [(lambda: None, "Получение буфера из порта")],
+                    [(lambda: None, "get IO module port")],
                     [(lambda: self.data_path.signal_left_fetch(SignalsLeftALU.INPUT), "INPUT -> ALU_LG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.LG_PASS), "ALU_RES = ALU_LG")],
                     [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
                 ]
             case Opcode.OUTPUT:
                 return [
-                    [(lambda: None, "Получение буфера из порта")],
+                    [(lambda: None, "get IO module port")],
                     [(lambda: self.data_path.signal_output_write(), "ACC -> OUTPUT ")]
                 ]
             case Opcode.CLH:
@@ -422,28 +424,27 @@ class ControlUnit:
         (("   " + self.program[self.program_counter]["term"]) if "term" in self.program[self.program_counter] else ""))
 
 
-def simulation(code, input_tokens, data_memory_size, limit, data):
+def simulation(code, input_tokens, data_memory_size, limit, data, log_file):
     data_path = DataPath(data_memory_size, ["H", "i", "\0"], data)
-    control_unit = ControlUnit(code, data_path)
+    control_unit = ControlUnit(code, data_path, log_file)
     instr_counter = 0
 
-    logging.debug("%s", control_unit)
     try:
         while instr_counter < limit:
             control_unit.decode_and_execute_instruction()
-            # logging.debug("%s", control_unit)
+            instr_counter += 1
     except EOFError:
-        logging.warning("Input buffer is empty!")
+        print("Input buffer is empty!", file=open(log_file, mode="a"))
     except StopIteration:
-        print("\nWell done!")
+        print("Well done!", file=open(log_file, mode="a"))
 
     if instr_counter >= limit:
-        logging.warning("Limit exceeded!")
-    logging.info("output_buffer: %s", data_path.output_buffer)
+        print("Limit exceeded!", file=open(log_file, mode="a"))
+    print(f"output_buffer: {data_path.output_buffer}", file=open(log_file, mode="a"))
     return "".join(data_path.output_buffer), instr_counter, control_unit.current_tick()
 
 
-def main(code_file, input_file):
+def main(code_file, input_file, log_file):
     data, code = eval(open(code_file).read().replace("null", "None"))
     with open(input_file, encoding="utf-8") as file:
         input_text = file.read()
@@ -457,14 +458,15 @@ def main(code_file, input_file):
         input_tokens=input_token,
         data_memory_size=4000,
         limit=1000,
+        log_file=log_file
     )
 
-    print("".join(output))
-    print("instr_counter: ", instr_counter, "ticks:", ticks)
+    print("".join(output), file=open(log_file, mode="a"))
+    print("instr_counter: ", instr_counter, "ticks:", ticks, file=open(log_file, mode="a"))
 
 
 if __name__ == "__main__":
-    logging.getLogger().setLevel(logging.DEBUG)
-    _, code_file, input_file = sys.argv
+    _, code_file, input_file, log_file = sys.argv
     main(code_file,
-         input_file)
+         input_file,
+         log_file)

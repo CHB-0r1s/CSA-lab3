@@ -1,0 +1,101 @@
+in_source: |-
+  ( print hello )
+in_stdin: |-
+  foo
+out_code: |-
+  ([97, 99, 0, 0, 4],
+  [{"opcode": "load", "addr_mod": "nep_addr", "addr": 104, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 101, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 108, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 108, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 111, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 0, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "print"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "print"},
+   {"opcode": "halt", "addr_mod": "non_addr", "addr": null}])
+out_log: |
+  NUM -> ALU_RG
+  TICK:   1 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU: 104 SP: 4000 ZF: 1 |	load   print
+  ALU_RES = ALU_RG
+  TICK:   2 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU: 104 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:   3 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU:   0 RG_ALU: 104 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:   4 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU:   0 RG_ALU: 104 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:   5 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU:   0 RG_ALU: 104 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:   6 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:   7 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:   8 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:   9 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  10 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  11 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  12 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  13 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  14 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  15 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  16 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  17 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  18 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  19 PC:   7 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  20 PC:   7 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 108 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  21 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  22 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  23 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  24 PC:   9 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  25 PC:   9 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  26 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  27 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	load   print
+  ALU_RES -> ACC
+  TICK:  28 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	load   print
+  get IO module port
+  TICK:  29 PC:  11 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	output   print
+  ACC -> OUTPUT 
+  TICK:  30 PC:  11 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	output   print
+  NUM -> ALU_RG
+  TICK:  31 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 1 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  32 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  33 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   print
+  SP -> ALU_LG
+  TICK:  34 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK:  35 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK:  36 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK:  36 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   print
+  Well done!
+  output_buffer: ['h', 'e', 'l', 'l', 'o', '0']
+  hello0
+  instr_counter:  14 ticks: 36
+
