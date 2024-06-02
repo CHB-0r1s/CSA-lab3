@@ -22,6 +22,6 @@ jobs:
 
       - name: run pytest
         run: |
-          export PYTHONPATH=/home/runner/work/CSA-lab3/CSA-lab3/src
+          export PYTHONPATH=/home/runner/work/CSA-lab3/CSA-lab3/.
           cd src
           python -m pytest golden_test.py
