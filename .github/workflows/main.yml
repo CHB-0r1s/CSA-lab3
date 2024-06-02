@@ -26,6 +26,8 @@ jobs:
           export PYTHONPATH=/home/runner/work/CSA-lab3/CSA-lab3/.
           cd src
           python -m pytest golden_test.py
+          cd tests
+          python -m pytest .
 
       - name: ruff
         run: |
