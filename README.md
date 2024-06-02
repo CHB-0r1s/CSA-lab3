@@ -256,8 +256,8 @@ DataPath включает в себя память данных, sp, АЛУ, а�
 ```
 
 ```text
-| Лузин Борис Евгеньевич | cat | 2 | - | - | 23 | 1101 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
-| Лузин Борис Евгеньевич | hello | 1 | - | - | 14 | 14 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
-| Лузин Борис Евгеньевич | hello_user_name | 1 | - | - | 103 | 272 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
-| Лузин Борис Евгеньевич | prob2 | 7 | | - | 66 | 1197 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
+| Лузин Борис Евгеньевич | cat | 2 | - | 23 | 1101 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
+| Лузин Борис Евгеньевич | hello | 1 | - | 14 | 14 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
+| Лузин Борис Евгеньевич | hello_user_name | 1 | - | 103 | 272 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
+| Лузин Борис Евгеньевич | prob2 | 7 | - | 66 | 1197 | lisp | acc | harv | hw | tick | struct | stream | port | cstr | prob2 |
 ```
