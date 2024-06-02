@@ -3,7 +3,7 @@
 
 Вариант: lisp -> asm | acc | harv | hw | tick -> instr | struct | stream | port | cstr | prob2 | cache
 
-Базовый вариант: **lisp** | acc | harv | hw | **tick** | struct | stream | port | cstr | prob2 | cache
+Базовый вариант: **lisp** | acc | harv | hw | **tick** | struct | stream | port | cstr | prob2
 
 ## Язык программирования - Lisp 
 ### Синтаксис языка
@@ -173,3 +173,82 @@ DataPath включает в себя память данных, sp, АЛУ, а�
 В результате выполнения операции АЛУ выставляет 2 флага:
 - zero - результат операции равен нулю
 - neg - результат операции отрицателен
+
+
+## Тестирование
+Тестирование настроено с помощью гитхаб акшнс, yml для сборки ci содержит описание каждого из шагов тестирования
++ Форматирование утилитой ruff
++ Линтинг утилитой ruff
++ Исполнение golden тестов для 3х обязательных программ и prob2
+Пример файла логов с потактовым логгированием (важные операции дополнительно соотнесены с их термами)
+```NUM -> ALU_RG
+  TICK:   1 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 1 |	load   var
+  ALU_RES = ALU_RG
+  TICK:   2 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK:   3 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK:   4 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK:   5 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK:   6 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK:   6 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK:   7 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK:   8 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK:   9 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK:  10 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK:  11 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK:  12 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK:  12 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK:  13 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK:  14 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK:  15 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK:  16 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK:  17 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK:  18 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK:  18 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  ADDR -> PC
+  ADDR -> ALU_RG
+  TICK:  20 PC:  24 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   6 SP: 3997 ZF: 0 |	load
+  ALU_RES = ALU_RG
+  TICK:  21 PC:  24 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   6 SP: 3997 ZF: 0 |	load
+  READ MEM[ALU]
+  TICK:  22 PC:  24 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3998 RG_ALU:   6 SP: 3997 ZF: 0 |	load
+  MEM[ALU] -> ALU_RG
+  TICK:  23 PC:  24 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	load
+  ALU_RES = ALU_RG
+  TICK:  24 PC:  24 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	load
+  ALU_RES -> ACC
+  TICK:  25 PC:  24 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	load
+  NUM -> ALU_RG
+  TICK:  26 PC:  25 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3998 RG_ALU:   2 SP: 3997 ZF: 0 |	mod
+  ACC -> ALU_LG
+  TICK:  26 PC:  25 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU:   1 RG_ALU:   2 SP: 3997 ZF: 0 |	mod
+  ALU_RES = ALU_LG % ALU_RG
+  TICK:  27 PC:  25 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU:   1 RG_ALU:   2 SP: 3997 ZF: 0 |	mod
+  ALU_RES -> ACC
+  TICK:  28 PC:  25 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU:   1 RG_ALU:   2 SP: 3997 ZF: 0 |	mod
+  SP -> ALU_LG
+  TICK:  29 PC:  26 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3997 RG_ALU:   2 SP: 3997 ZF: 0 |	push
+  ALU_RES = SP - 1
+  TICK:  30 PC:  26 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3997 RG_ALU:   2 SP: 3997 ZF: 0 |	push
+  ALU_RES -> SP
+  TICK:  31 PC:  26 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3997 RG_ALU:   2 SP: 3996 ZF: 0 |	push
+  WRITE ACC -> MEM[ALU]
+  TICK:  31 PC:  26 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3997 RG_ALU:   2 SP: 3996 ZF: 0 |	push```
