@@ -18,8 +18,8 @@ def test_translator_and_machine(golden):
         with open(inp, mode="w", encoding="utf-8") as f:
             f.write(golden["in_stdin"])
 
-        subprocess.Popen(["python", "./translator.py", prop, out], cwd="src").wait()
-        subprocess.Popen(["python", "./machine.py", out, inp, log], cwd="src").wait()
+        subprocess.Popen(["python", "./translator.py", prop, out], cwd=".").wait()
+        subprocess.Popen(["python", "./machine.py", out, inp, log], cwd=".").wait()
 
         with open(out, "r") as f:
             machine_code = f.read()
