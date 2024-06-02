@@ -426,7 +426,7 @@ class ControlUnit:
 
 
 def simulation(code, input_tokens, data_memory_size, limit, data, log_file):
-    data_path = DataPath(data_memory_size, ["H", "i", "\0"], data)
+    data_path = DataPath(data_memory_size, input_tokens, data)
     control_unit = ControlUnit(code, data_path, log_file)
     instr_counter = 0
 
@@ -448,7 +448,7 @@ def simulation(code, input_tokens, data_memory_size, limit, data, log_file):
 def main(code_file, input_file, log_file):
     data, code = eval(open(code_file).read().replace("null", "None"))
     with open(input_file, encoding="utf-8") as file:
-        input_text = file.read()
+        input_text = file.read().replace("\\0", "\0")
         input_token = []
         for char in input_text:
             input_token.append(char)
@@ -458,7 +458,7 @@ def main(code_file, input_file, log_file):
         data=data,
         input_tokens=input_token,
         data_memory_size=4000,
-        limit=1000,
+        limit=10000,
         log_file=log_file
     )
 

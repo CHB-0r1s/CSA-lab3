@@ -1,0 +1,2217 @@
+in_source: |-
+  ( print vvedite_your_name ) ( var_input 256 name ( lisp_read ) ) ( print hello_ ) ( print name )
+in_stdin: |-
+  boris\0
+out_code: |-
+  ([97, 99, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0],
+  [{"opcode": "load", "addr_mod": "nep_addr", "addr": 118, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 118, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 101, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 100, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 105, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 116, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 101, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 95, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 121, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 111, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 117, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 114, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 95, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 110, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 97, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 109, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 101, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 0, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "print"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "input", "addr_mod": "non_addr", "addr": 11, "term": "get_prim"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "get_prim"},
+   {"opcode": "pop", "addr_mod": "nep_addr", "addr": null, "term": "var"},
+   {"opcode": "store", "addr_mod": "abs_addr", "addr": 262, "term": "var"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "load", "addr_mod": "abs_addr", "addr": 261, "term": "store_prim", "comment": "push variable addr"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "store_prim", "comment": "push variable addr"},
+   {"opcode": "load", "addr_mod": "abs_addr", "addr": 262, "term": "store_prim"},
+   {"opcode": "store", "addr_mod": "con_tos_addr", "addr": null, "term": "store_prim"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": "1", "term": "+"},
+   {"opcode": "add", "addr_mod": "abs_addr", "addr": 261, "term": "+"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "+", "comment": "Return sum value"},
+   {"opcode": "pop", "addr_mod": "nep_addr", "addr": null, "term": "var"},
+   {"opcode": "store", "addr_mod": "abs_addr", "addr": 261, "term": "var"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var", "comment": "return 1 if all ok"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "<"},
+   {"opcode": "sub", "addr_mod": "abs_addr", "addr": 262, "term": "<"},
+   {"opcode": "jump_if_not_neg", "addr_mod": "non_addr", "addr": 66, "term": "<"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "<"},
+   {"opcode": "jump", "addr_mod": "non_addr", "addr": 67, "term": "<"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 0, "term": "<"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "<"},
+   {"opcode": "pop", "addr_mod": "nep_addr", "addr": null},
+   {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": 42},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "while"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 5, "term": "lisp_read", "comment": "return init memory for string"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "lisp_read"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "var_input", "comment": "return 1 if all ok"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "var_input", "comment": "return 1 if all ok"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 104, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 101, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 108, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 108, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 111, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 95, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 0, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 1, "term": "print"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "print"},
+   {"opcode": "load", "addr_mod": "nep_addr", "addr": 5, "term": "print"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "print"},
+   {"opcode": "load", "addr_mod": "con_tos_addr", "addr": null, "term": "print"},
+   {"opcode": "output", "addr_mod": "non_addr", "addr": 11, "term": "print"},
+   {"opcode": "sub", "addr_mod": "nep_addr", "addr": 0, "term": "print"},
+   {"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": 102, "term": "print"},
+   {"opcode": "pop", "addr_mod": "nep_addr", "addr": null, "term": "print"},
+   {"opcode": "add", "addr_mod": "nep_addr", "addr": 1, "term": "print"},
+   {"opcode": "push", "addr_mod": "non_addr", "addr": null, "term": "print"},
+   {"opcode": "jump", "addr_mod": "non_addr", "addr": 94, "term": "print"},
+   {"opcode": "pop", "addr_mod": "nep_addr", "addr": null, "term": "print"},
+   {"opcode": "halt", "addr_mod": "non_addr", "addr": null}])
+out_log: |
+  NUM -> ALU_RG
+  TICK:   1 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 1 |	load   print
+  ALU_RES = ALU_RG
+  TICK:   2 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:   3 PC:   0 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:   4 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:   5 PC:   1 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:   6 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:   7 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:   8 PC:   2 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:   9 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  10 PC:   3 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 118 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  11 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  12 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 118 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  13 PC:   4 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  14 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  15 PC:   5 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  16 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 100 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  17 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 100 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  18 PC:   6 ADDR:   0 MEM_OUT: 0 ACC: 100 LG_ALU:   0 RG_ALU: 100 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  19 PC:   7 ADDR:   0 MEM_OUT: 0 ACC: 100 LG_ALU:   0 RG_ALU: 100 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  20 PC:   7 ADDR:   0 MEM_OUT: 0 ACC: 100 LG_ALU:   0 RG_ALU: 100 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  21 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 100 LG_ALU:   0 RG_ALU: 105 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  22 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 100 LG_ALU:   0 RG_ALU: 105 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  23 PC:   8 ADDR:   0 MEM_OUT: 0 ACC: 105 LG_ALU:   0 RG_ALU: 105 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  24 PC:   9 ADDR:   0 MEM_OUT: 0 ACC: 105 LG_ALU:   0 RG_ALU: 105 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  25 PC:   9 ADDR:   0 MEM_OUT: 0 ACC: 105 LG_ALU:   0 RG_ALU: 105 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  26 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 105 LG_ALU:   0 RG_ALU: 116 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  27 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 105 LG_ALU:   0 RG_ALU: 116 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  28 PC:  10 ADDR:   0 MEM_OUT: 0 ACC: 116 LG_ALU:   0 RG_ALU: 116 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  29 PC:  11 ADDR:   0 MEM_OUT: 0 ACC: 116 LG_ALU:   0 RG_ALU: 116 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  30 PC:  11 ADDR:   0 MEM_OUT: 0 ACC: 116 LG_ALU:   0 RG_ALU: 116 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  31 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 116 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  32 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 116 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  33 PC:  12 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  34 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  35 PC:  13 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  36 PC:  14 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  37 PC:  14 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  38 PC:  14 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  39 PC:  15 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  40 PC:  15 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  41 PC:  16 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU: 121 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  42 PC:  16 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU: 121 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  43 PC:  16 ADDR:   0 MEM_OUT: 0 ACC: 121 LG_ALU:   0 RG_ALU: 121 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  44 PC:  17 ADDR:   0 MEM_OUT: 0 ACC: 121 LG_ALU:   0 RG_ALU: 121 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  45 PC:  17 ADDR:   0 MEM_OUT: 0 ACC: 121 LG_ALU:   0 RG_ALU: 121 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  46 PC:  18 ADDR:   0 MEM_OUT: 0 ACC: 121 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  47 PC:  18 ADDR:   0 MEM_OUT: 0 ACC: 121 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  48 PC:  18 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  49 PC:  19 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  50 PC:  19 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 111 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  51 PC:  20 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 117 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  52 PC:  20 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU:   0 RG_ALU: 117 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  53 PC:  20 ADDR:   0 MEM_OUT: 0 ACC: 117 LG_ALU:   0 RG_ALU: 117 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  54 PC:  21 ADDR:   0 MEM_OUT: 0 ACC: 117 LG_ALU:   0 RG_ALU: 117 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  55 PC:  21 ADDR:   0 MEM_OUT: 0 ACC: 117 LG_ALU:   0 RG_ALU: 117 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  56 PC:  22 ADDR:   0 MEM_OUT: 0 ACC: 117 LG_ALU:   0 RG_ALU: 114 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  57 PC:  22 ADDR:   0 MEM_OUT: 0 ACC: 117 LG_ALU:   0 RG_ALU: 114 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  58 PC:  22 ADDR:   0 MEM_OUT: 0 ACC: 114 LG_ALU:   0 RG_ALU: 114 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  59 PC:  23 ADDR:   0 MEM_OUT: 0 ACC: 114 LG_ALU:   0 RG_ALU: 114 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  60 PC:  23 ADDR:   0 MEM_OUT: 0 ACC: 114 LG_ALU:   0 RG_ALU: 114 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  61 PC:  24 ADDR:   0 MEM_OUT: 0 ACC: 114 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  62 PC:  24 ADDR:   0 MEM_OUT: 0 ACC: 114 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  63 PC:  24 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  64 PC:  25 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  65 PC:  25 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU:  95 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  66 PC:  26 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU: 110 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  67 PC:  26 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU:   0 RG_ALU: 110 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  68 PC:  26 ADDR:   0 MEM_OUT: 0 ACC: 110 LG_ALU:   0 RG_ALU: 110 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  69 PC:  27 ADDR:   0 MEM_OUT: 0 ACC: 110 LG_ALU:   0 RG_ALU: 110 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  70 PC:  27 ADDR:   0 MEM_OUT: 0 ACC: 110 LG_ALU:   0 RG_ALU: 110 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  71 PC:  28 ADDR:   0 MEM_OUT: 0 ACC: 110 LG_ALU:   0 RG_ALU:  97 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  72 PC:  28 ADDR:   0 MEM_OUT: 0 ACC: 110 LG_ALU:   0 RG_ALU:  97 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  73 PC:  28 ADDR:   0 MEM_OUT: 0 ACC: 97 LG_ALU:   0 RG_ALU:  97 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  74 PC:  29 ADDR:   0 MEM_OUT: 0 ACC: 97 LG_ALU:   0 RG_ALU:  97 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  75 PC:  29 ADDR:   0 MEM_OUT: 0 ACC: 97 LG_ALU:   0 RG_ALU:  97 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  76 PC:  30 ADDR:   0 MEM_OUT: 0 ACC: 97 LG_ALU:   0 RG_ALU: 109 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  77 PC:  30 ADDR:   0 MEM_OUT: 0 ACC: 97 LG_ALU:   0 RG_ALU: 109 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  78 PC:  30 ADDR:   0 MEM_OUT: 0 ACC: 109 LG_ALU:   0 RG_ALU: 109 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  79 PC:  31 ADDR:   0 MEM_OUT: 0 ACC: 109 LG_ALU:   0 RG_ALU: 109 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  80 PC:  31 ADDR:   0 MEM_OUT: 0 ACC: 109 LG_ALU:   0 RG_ALU: 109 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  81 PC:  32 ADDR:   0 MEM_OUT: 0 ACC: 109 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  82 PC:  32 ADDR:   0 MEM_OUT: 0 ACC: 109 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  83 PC:  32 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	load   print
+  get IO module port
+  TICK:  84 PC:  33 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK:  85 PC:  33 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU: 101 SP: 4000 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK:  86 PC:  34 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  87 PC:  34 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	load   print
+  ALU_RES -> ACC
+  TICK:  88 PC:  34 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	load   print
+  get IO module port
+  TICK:  89 PC:  35 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	output   print
+  ACC -> OUTPUT 
+  TICK:  90 PC:  35 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 4000 ZF: 1 |	output   print
+  NUM -> ALU_RG
+  TICK:  91 PC:  36 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 1 |	load   print
+  ALU_RES = ALU_RG
+  TICK:  92 PC:  36 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK:  93 PC:  36 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   0 RG_ALU:   1 SP: 4000 ZF: 0 |	load   print
+  SP -> ALU_LG
+  TICK:  94 PC:  37 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK:  95 PC:  37 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 4000 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK:  96 PC:  37 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK:  96 PC:  37 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	push   print
+  NUM -> ALU_RG
+  TICK:  97 PC:  38 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK:  98 PC:  38 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK:  99 PC:  38 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 4000 RG_ALU:   1 SP: 3999 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 100 PC:  39 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 101 PC:  39 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3999 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 102 PC:  39 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 102 PC:  39 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 103 PC:  40 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 104 PC:  40 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 105 PC:  40 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3999 RG_ALU:   1 SP: 3998 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 106 PC:  41 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 107 PC:  41 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3998 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 108 PC:  41 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 108 PC:  41 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  get IO module port
+  TICK: 109 PC:  42 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3998 RG_ALU:   1 SP: 3997 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 110 PC:  42 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:  98 RG_ALU:   1 SP: 3997 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 111 PC:  42 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:  98 RG_ALU:   1 SP: 3997 ZF: 0 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 112 PC:  42 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU:  98 RG_ALU:   1 SP: 3997 ZF: 0 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 113 PC:  43 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3997 RG_ALU:   1 SP: 3997 ZF: 0 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 114 PC:  43 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3997 RG_ALU:   1 SP: 3997 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 115 PC:  43 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3997 RG_ALU:   1 SP: 3996 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 115 PC:  43 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3997 RG_ALU:   1 SP: 3996 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 116 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3996 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 117 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3996 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 118 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3996 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 119 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3996 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 120 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3997 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 120 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:  98 SP: 3997 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 121 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:  98 SP: 3997 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 122 PC:  44 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:  98 SP: 3997 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 123 PC:  45 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU: 262 SP: 3997 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 124 PC:  45 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU: 262 SP: 3997 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 125 PC:  45 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU: 262 SP: 3997 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 126 PC:  46 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3997 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 127 PC:  46 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:   1 SP: 3997 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 128 PC:  46 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3996 RG_ALU:   1 SP: 3997 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 129 PC:  47 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 130 PC:  47 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU:   1 SP: 3997 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 131 PC:  47 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU:   1 SP: 3996 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 131 PC:  47 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU:   1 SP: 3996 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 132 PC:  48 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU: 261 SP: 3996 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 133 PC:  48 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3997 RG_ALU: 261 SP: 3996 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 134 PC:  48 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3997 RG_ALU: 261 SP: 3996 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 135 PC:  48 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3997 RG_ALU:   5 SP: 3996 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 136 PC:  48 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3997 RG_ALU:   5 SP: 3996 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 137 PC:  48 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3997 RG_ALU:   5 SP: 3996 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 138 PC:  49 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU:   5 SP: 3996 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 139 PC:  49 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU:   5 SP: 3996 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 140 PC:  49 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU:   5 SP: 3995 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 140 PC:  49 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU:   5 SP: 3995 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 141 PC:  50 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU: 262 SP: 3995 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 142 PC:  50 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3996 RG_ALU: 262 SP: 3995 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 143 PC:  50 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3996 RG_ALU: 262 SP: 3995 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 144 PC:  50 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3996 RG_ALU:  98 SP: 3995 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 145 PC:  50 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3996 RG_ALU:  98 SP: 3995 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 146 PC:  50 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3996 RG_ALU:  98 SP: 3995 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 147 PC:  51 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3995 RG_ALU:  98 SP: 3995 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 148 PC:  51 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3995 RG_ALU:  98 SP: 3995 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 149 PC:  51 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:  98 SP: 3995 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 150 PC:  51 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:   5 SP: 3995 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 151 PC:  51 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:   5 SP: 3995 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 152 PC:  51 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:   5 SP: 3995 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 153 PC:  52 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:   1 SP: 3995 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 154 PC:  52 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3995 RG_ALU:   1 SP: 3995 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 155 PC:  52 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3995 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 156 PC:  53 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3995 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 157 PC:  53 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3995 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 158 PC:  53 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3994 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 158 PC:  53 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3994 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 159 PC:  54 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3994 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 160 PC:  54 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3994 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 161 PC:  54 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   1 SP: 3994 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 162 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU: 261 SP: 3994 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 163 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU: 261 SP: 3994 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 164 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU: 261 SP: 3994 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 165 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU: 3995 RG_ALU:   5 SP: 3994 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 165 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU:   1 RG_ALU:   5 SP: 3994 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 166 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 1 LG_ALU:   1 RG_ALU:   5 SP: 3994 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 167 PC:  55 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU:   1 RG_ALU:   5 SP: 3994 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 168 PC:  56 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3994 RG_ALU:   5 SP: 3994 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 169 PC:  56 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3994 RG_ALU:   5 SP: 3994 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 170 PC:  56 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3994 RG_ALU:   5 SP: 3993 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 170 PC:  56 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3994 RG_ALU:   5 SP: 3993 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 171 PC:  57 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3993 RG_ALU:   5 SP: 3993 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 172 PC:  57 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3993 RG_ALU:   5 SP: 3993 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 173 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   5 SP: 3993 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 174 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   5 SP: 3993 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 175 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   5 SP: 3994 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 175 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   6 SP: 3994 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 176 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   6 SP: 3994 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 177 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   6 SP: 3994 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 178 PC:  58 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU: 261 SP: 3994 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 179 PC:  58 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU: 261 SP: 3994 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 180 PC:  58 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU: 261 SP: 3994 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 181 PC:  59 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   1 SP: 3994 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 182 PC:  59 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   1 SP: 3994 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 183 PC:  59 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3994 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 184 PC:  60 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3994 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 185 PC:  60 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3994 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 186 PC:  60 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3993 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 186 PC:  60 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3993 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 187 PC:  61 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 188 PC:  61 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 189 PC:  61 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 190 PC:  62 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU: 262 SP: 3993 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 191 PC:  62 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3994 RG_ALU: 262 SP: 3993 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 192 PC:  62 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3994 RG_ALU: 262 SP: 3993 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 193 PC:  62 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3994 RG_ALU:  98 SP: 3993 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 193 PC:  62 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU:   1 RG_ALU:  98 SP: 3993 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 194 PC:  62 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU:   1 RG_ALU:  98 SP: 3993 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 195 PC:  62 ADDR:   0 MEM_OUT: 98 ACC: -97 LG_ALU:   1 RG_ALU:  98 SP: 3993 ZF: 0 |	sub   <
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 196 PC:  64 ADDR:   0 MEM_OUT: 98 ACC: -97 LG_ALU:   1 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 197 PC:  64 ADDR:   0 MEM_OUT: 98 ACC: -97 LG_ALU:   1 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 198 PC:  64 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU:   1 RG_ALU:   1 SP: 3993 ZF: 0 |	load   <
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 200 PC:  67 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   <
+  ALU_RES = SP - 1
+  TICK: 201 PC:  67 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 202 PC:  67 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 202 PC:  67 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 203 PC:  68 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 204 PC:  68 ADDR:   0 MEM_OUT: 98 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 205 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 206 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 207 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 207 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 208 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	pop
+  ALU_RES -> ACC
+  TICK: 209 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	pop
+  ADDR -> PC
+  get IO module port
+  TICK: 211 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 212 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 111 RG_ALU:   1 SP: 3993 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 213 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 111 RG_ALU:   1 SP: 3993 ZF: 0 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 214 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 111 RG_ALU:   1 SP: 3993 ZF: 0 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 215 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 216 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 217 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 217 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 218 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 219 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 220 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 221 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3992 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 222 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 222 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 111 SP: 3993 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 223 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 111 SP: 3993 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 224 PC:  44 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 111 SP: 3993 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 225 PC:  45 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 262 SP: 3993 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 226 PC:  45 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 262 SP: 3993 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 227 PC:  45 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 262 SP: 3993 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 228 PC:  46 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 229 PC:  46 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 230 PC:  46 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3992 RG_ALU:   1 SP: 3993 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 231 PC:  47 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 232 PC:  47 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3993 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 233 PC:  47 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 233 PC:  47 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU:   1 SP: 3992 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 234 PC:  48 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU: 261 SP: 3992 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 235 PC:  48 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3993 RG_ALU: 261 SP: 3992 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 236 PC:  48 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3993 RG_ALU: 261 SP: 3992 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 237 PC:  48 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3993 RG_ALU:   6 SP: 3992 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 238 PC:  48 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3993 RG_ALU:   6 SP: 3992 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 239 PC:  48 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3993 RG_ALU:   6 SP: 3992 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 240 PC:  49 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU:   6 SP: 3992 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 241 PC:  49 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU:   6 SP: 3992 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 242 PC:  49 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU:   6 SP: 3991 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 242 PC:  49 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU:   6 SP: 3991 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 243 PC:  50 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU: 262 SP: 3991 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 244 PC:  50 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3992 RG_ALU: 262 SP: 3991 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 245 PC:  50 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3992 RG_ALU: 262 SP: 3991 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 246 PC:  50 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3992 RG_ALU: 111 SP: 3991 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 247 PC:  50 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3992 RG_ALU: 111 SP: 3991 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 248 PC:  50 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3992 RG_ALU: 111 SP: 3991 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 249 PC:  51 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3991 RG_ALU: 111 SP: 3991 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 250 PC:  51 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3991 RG_ALU: 111 SP: 3991 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 251 PC:  51 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU: 111 SP: 3991 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 252 PC:  51 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU:   6 SP: 3991 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 253 PC:  51 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU:   6 SP: 3991 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 254 PC:  51 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU:   6 SP: 3991 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 255 PC:  52 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU:   1 SP: 3991 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 256 PC:  52 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3991 RG_ALU:   1 SP: 3991 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 257 PC:  52 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3991 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 258 PC:  53 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3991 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 259 PC:  53 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3991 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 260 PC:  53 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3990 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 260 PC:  53 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3990 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 261 PC:  54 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3990 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 262 PC:  54 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3990 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 263 PC:  54 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   1 SP: 3990 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 264 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU: 261 SP: 3990 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 265 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU: 261 SP: 3990 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 266 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU: 261 SP: 3990 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 267 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU: 3991 RG_ALU:   6 SP: 3990 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 267 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU:   1 RG_ALU:   6 SP: 3990 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 268 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 1 LG_ALU:   1 RG_ALU:   6 SP: 3990 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 269 PC:  55 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU:   1 RG_ALU:   6 SP: 3990 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 270 PC:  56 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3990 RG_ALU:   6 SP: 3990 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 271 PC:  56 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3990 RG_ALU:   6 SP: 3990 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 272 PC:  56 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3990 RG_ALU:   6 SP: 3989 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 272 PC:  56 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3990 RG_ALU:   6 SP: 3989 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 273 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3989 RG_ALU:   6 SP: 3989 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 274 PC:  57 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3989 RG_ALU:   6 SP: 3989 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 275 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   6 SP: 3989 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 276 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   6 SP: 3989 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 277 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   6 SP: 3990 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 277 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   7 SP: 3990 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 278 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   7 SP: 3990 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 279 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   7 SP: 3990 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 280 PC:  58 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU: 261 SP: 3990 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 281 PC:  58 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU: 261 SP: 3990 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 282 PC:  58 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU: 261 SP: 3990 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 283 PC:  59 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   1 SP: 3990 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 284 PC:  59 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   1 SP: 3990 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 285 PC:  59 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3990 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 286 PC:  60 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3990 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 287 PC:  60 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3990 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 288 PC:  60 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3989 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 288 PC:  60 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3989 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 289 PC:  61 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 290 PC:  61 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 291 PC:  61 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 292 PC:  62 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU: 262 SP: 3989 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 293 PC:  62 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3990 RG_ALU: 262 SP: 3989 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 294 PC:  62 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3990 RG_ALU: 262 SP: 3989 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 295 PC:  62 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3990 RG_ALU: 111 SP: 3989 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 295 PC:  62 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU:   1 RG_ALU: 111 SP: 3989 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 296 PC:  62 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU:   1 RG_ALU: 111 SP: 3989 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 297 PC:  62 ADDR:   0 MEM_OUT: 111 ACC: -110 LG_ALU:   1 RG_ALU: 111 SP: 3989 ZF: 0 |	sub   <
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 298 PC:  64 ADDR:   0 MEM_OUT: 111 ACC: -110 LG_ALU:   1 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 299 PC:  64 ADDR:   0 MEM_OUT: 111 ACC: -110 LG_ALU:   1 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 300 PC:  64 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU:   1 RG_ALU:   1 SP: 3989 ZF: 0 |	load   <
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 302 PC:  67 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   <
+  ALU_RES = SP - 1
+  TICK: 303 PC:  67 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 304 PC:  67 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 304 PC:  67 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 305 PC:  68 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 306 PC:  68 ADDR:   0 MEM_OUT: 111 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 307 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 308 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 309 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 309 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 310 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	pop
+  ALU_RES -> ACC
+  TICK: 311 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	pop
+  ADDR -> PC
+  get IO module port
+  TICK: 313 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 314 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 114 RG_ALU:   1 SP: 3989 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 315 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 114 RG_ALU:   1 SP: 3989 ZF: 0 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 316 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 114 RG_ALU:   1 SP: 3989 ZF: 0 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 317 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 318 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 319 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 319 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 320 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 321 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 322 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 323 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3988 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 324 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 324 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 114 SP: 3989 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 325 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 114 SP: 3989 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 326 PC:  44 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 114 SP: 3989 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 327 PC:  45 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 262 SP: 3989 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 328 PC:  45 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 262 SP: 3989 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 329 PC:  45 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 262 SP: 3989 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 330 PC:  46 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 331 PC:  46 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 332 PC:  46 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3988 RG_ALU:   1 SP: 3989 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 333 PC:  47 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 334 PC:  47 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3989 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 335 PC:  47 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 335 PC:  47 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU:   1 SP: 3988 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 336 PC:  48 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU: 261 SP: 3988 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 337 PC:  48 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3989 RG_ALU: 261 SP: 3988 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 338 PC:  48 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3989 RG_ALU: 261 SP: 3988 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 339 PC:  48 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3989 RG_ALU:   7 SP: 3988 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 340 PC:  48 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3989 RG_ALU:   7 SP: 3988 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 341 PC:  48 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3989 RG_ALU:   7 SP: 3988 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 342 PC:  49 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU:   7 SP: 3988 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 343 PC:  49 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU:   7 SP: 3988 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 344 PC:  49 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU:   7 SP: 3987 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 344 PC:  49 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU:   7 SP: 3987 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 345 PC:  50 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU: 262 SP: 3987 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 346 PC:  50 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3988 RG_ALU: 262 SP: 3987 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 347 PC:  50 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3988 RG_ALU: 262 SP: 3987 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 348 PC:  50 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3988 RG_ALU: 114 SP: 3987 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 349 PC:  50 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3988 RG_ALU: 114 SP: 3987 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 350 PC:  50 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3988 RG_ALU: 114 SP: 3987 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 351 PC:  51 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3987 RG_ALU: 114 SP: 3987 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 352 PC:  51 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3987 RG_ALU: 114 SP: 3987 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 353 PC:  51 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU: 114 SP: 3987 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 354 PC:  51 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU:   7 SP: 3987 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 355 PC:  51 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU:   7 SP: 3987 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 356 PC:  51 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU:   7 SP: 3987 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 357 PC:  52 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU:   1 SP: 3987 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 358 PC:  52 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3987 RG_ALU:   1 SP: 3987 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 359 PC:  52 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3987 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 360 PC:  53 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3987 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 361 PC:  53 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3987 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 362 PC:  53 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3986 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 362 PC:  53 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3986 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 363 PC:  54 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3986 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 364 PC:  54 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3986 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 365 PC:  54 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   1 SP: 3986 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 366 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU: 261 SP: 3986 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 367 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU: 261 SP: 3986 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 368 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU: 261 SP: 3986 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 369 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU: 3987 RG_ALU:   7 SP: 3986 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 369 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU:   1 RG_ALU:   7 SP: 3986 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 370 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 1 LG_ALU:   1 RG_ALU:   7 SP: 3986 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 371 PC:  55 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU:   1 RG_ALU:   7 SP: 3986 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 372 PC:  56 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3986 RG_ALU:   7 SP: 3986 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 373 PC:  56 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3986 RG_ALU:   7 SP: 3986 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 374 PC:  56 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3986 RG_ALU:   7 SP: 3985 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 374 PC:  56 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3986 RG_ALU:   7 SP: 3985 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 375 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3985 RG_ALU:   7 SP: 3985 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 376 PC:  57 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3985 RG_ALU:   7 SP: 3985 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 377 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   7 SP: 3985 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 378 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   7 SP: 3985 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 379 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   7 SP: 3986 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 379 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   8 SP: 3986 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 380 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   8 SP: 3986 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 381 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   8 SP: 3986 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 382 PC:  58 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU: 261 SP: 3986 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 383 PC:  58 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU: 261 SP: 3986 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 384 PC:  58 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU: 261 SP: 3986 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 385 PC:  59 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   1 SP: 3986 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 386 PC:  59 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   1 SP: 3986 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 387 PC:  59 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3986 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 388 PC:  60 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3986 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 389 PC:  60 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3986 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 390 PC:  60 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3985 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 390 PC:  60 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3985 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 391 PC:  61 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 392 PC:  61 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 393 PC:  61 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 394 PC:  62 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU: 262 SP: 3985 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 395 PC:  62 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3986 RG_ALU: 262 SP: 3985 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 396 PC:  62 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3986 RG_ALU: 262 SP: 3985 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 397 PC:  62 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3986 RG_ALU: 114 SP: 3985 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 397 PC:  62 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU:   1 RG_ALU: 114 SP: 3985 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 398 PC:  62 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU:   1 RG_ALU: 114 SP: 3985 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 399 PC:  62 ADDR:   0 MEM_OUT: 114 ACC: -113 LG_ALU:   1 RG_ALU: 114 SP: 3985 ZF: 0 |	sub   <
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 400 PC:  64 ADDR:   0 MEM_OUT: 114 ACC: -113 LG_ALU:   1 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 401 PC:  64 ADDR:   0 MEM_OUT: 114 ACC: -113 LG_ALU:   1 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 402 PC:  64 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU:   1 RG_ALU:   1 SP: 3985 ZF: 0 |	load   <
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 404 PC:  67 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   <
+  ALU_RES = SP - 1
+  TICK: 405 PC:  67 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 406 PC:  67 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 406 PC:  67 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 407 PC:  68 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 408 PC:  68 ADDR:   0 MEM_OUT: 114 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 409 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 410 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 411 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 411 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 412 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	pop
+  ALU_RES -> ACC
+  TICK: 413 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	pop
+  ADDR -> PC
+  get IO module port
+  TICK: 415 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 416 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 105 RG_ALU:   1 SP: 3985 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 417 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 105 RG_ALU:   1 SP: 3985 ZF: 0 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 418 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 105 RG_ALU:   1 SP: 3985 ZF: 0 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 419 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 420 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 421 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 421 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 422 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 423 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 424 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 425 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3984 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 426 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 426 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 105 SP: 3985 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 427 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 105 SP: 3985 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 428 PC:  44 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 105 SP: 3985 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 429 PC:  45 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 262 SP: 3985 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 430 PC:  45 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 262 SP: 3985 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 431 PC:  45 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 262 SP: 3985 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 432 PC:  46 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 433 PC:  46 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 434 PC:  46 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3984 RG_ALU:   1 SP: 3985 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 435 PC:  47 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 436 PC:  47 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3985 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 437 PC:  47 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 437 PC:  47 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU:   1 SP: 3984 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 438 PC:  48 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU: 261 SP: 3984 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 439 PC:  48 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3985 RG_ALU: 261 SP: 3984 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 440 PC:  48 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3985 RG_ALU: 261 SP: 3984 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 441 PC:  48 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3985 RG_ALU:   8 SP: 3984 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 442 PC:  48 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3985 RG_ALU:   8 SP: 3984 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 443 PC:  48 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3985 RG_ALU:   8 SP: 3984 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 444 PC:  49 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU:   8 SP: 3984 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 445 PC:  49 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU:   8 SP: 3984 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 446 PC:  49 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU:   8 SP: 3983 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 446 PC:  49 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU:   8 SP: 3983 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 447 PC:  50 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU: 262 SP: 3983 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 448 PC:  50 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3984 RG_ALU: 262 SP: 3983 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 449 PC:  50 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3984 RG_ALU: 262 SP: 3983 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 450 PC:  50 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3984 RG_ALU: 105 SP: 3983 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 451 PC:  50 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3984 RG_ALU: 105 SP: 3983 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 452 PC:  50 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3984 RG_ALU: 105 SP: 3983 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 453 PC:  51 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3983 RG_ALU: 105 SP: 3983 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 454 PC:  51 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3983 RG_ALU: 105 SP: 3983 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 455 PC:  51 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU: 105 SP: 3983 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 456 PC:  51 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU:   8 SP: 3983 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 457 PC:  51 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU:   8 SP: 3983 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 458 PC:  51 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU:   8 SP: 3983 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 459 PC:  52 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU:   1 SP: 3983 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 460 PC:  52 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3983 RG_ALU:   1 SP: 3983 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 461 PC:  52 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3983 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 462 PC:  53 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3983 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 463 PC:  53 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3983 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 464 PC:  53 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3982 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 464 PC:  53 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3982 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 465 PC:  54 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3982 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 466 PC:  54 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3982 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 467 PC:  54 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   1 SP: 3982 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 468 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU: 261 SP: 3982 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 469 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU: 261 SP: 3982 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 470 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU: 261 SP: 3982 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 471 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU: 3983 RG_ALU:   8 SP: 3982 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 471 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU:   1 RG_ALU:   8 SP: 3982 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 472 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 1 LG_ALU:   1 RG_ALU:   8 SP: 3982 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 473 PC:  55 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU:   1 RG_ALU:   8 SP: 3982 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 474 PC:  56 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3982 RG_ALU:   8 SP: 3982 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 475 PC:  56 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3982 RG_ALU:   8 SP: 3982 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 476 PC:  56 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3982 RG_ALU:   8 SP: 3981 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 476 PC:  56 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3982 RG_ALU:   8 SP: 3981 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 477 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3981 RG_ALU:   8 SP: 3981 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 478 PC:  57 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3981 RG_ALU:   8 SP: 3981 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 479 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   8 SP: 3981 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 480 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   8 SP: 3981 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 481 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   8 SP: 3982 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 481 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   9 SP: 3982 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 482 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   9 SP: 3982 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 483 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   9 SP: 3982 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 484 PC:  58 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU: 261 SP: 3982 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 485 PC:  58 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU: 261 SP: 3982 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 486 PC:  58 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU: 261 SP: 3982 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 487 PC:  59 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   1 SP: 3982 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 488 PC:  59 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   1 SP: 3982 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 489 PC:  59 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3982 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 490 PC:  60 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3982 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 491 PC:  60 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3982 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 492 PC:  60 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3981 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 492 PC:  60 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3981 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 493 PC:  61 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 494 PC:  61 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 495 PC:  61 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 496 PC:  62 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU: 262 SP: 3981 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 497 PC:  62 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3982 RG_ALU: 262 SP: 3981 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 498 PC:  62 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3982 RG_ALU: 262 SP: 3981 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 499 PC:  62 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3982 RG_ALU: 105 SP: 3981 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 499 PC:  62 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU:   1 RG_ALU: 105 SP: 3981 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 500 PC:  62 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU:   1 RG_ALU: 105 SP: 3981 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 501 PC:  62 ADDR:   0 MEM_OUT: 105 ACC: -104 LG_ALU:   1 RG_ALU: 105 SP: 3981 ZF: 0 |	sub   <
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 502 PC:  64 ADDR:   0 MEM_OUT: 105 ACC: -104 LG_ALU:   1 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 503 PC:  64 ADDR:   0 MEM_OUT: 105 ACC: -104 LG_ALU:   1 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 504 PC:  64 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU:   1 RG_ALU:   1 SP: 3981 ZF: 0 |	load   <
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 506 PC:  67 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   <
+  ALU_RES = SP - 1
+  TICK: 507 PC:  67 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 508 PC:  67 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 508 PC:  67 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 509 PC:  68 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 510 PC:  68 ADDR:   0 MEM_OUT: 105 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 511 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 512 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 513 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 513 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 514 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	pop
+  ALU_RES -> ACC
+  TICK: 515 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	pop
+  ADDR -> PC
+  get IO module port
+  TICK: 517 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 518 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 115 RG_ALU:   1 SP: 3981 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 519 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 115 RG_ALU:   1 SP: 3981 ZF: 0 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 520 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 115 RG_ALU:   1 SP: 3981 ZF: 0 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 521 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 522 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 523 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 523 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 524 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 525 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 526 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 527 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3980 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 528 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 528 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 115 SP: 3981 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 529 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 115 SP: 3981 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 530 PC:  44 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 115 SP: 3981 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 531 PC:  45 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 262 SP: 3981 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 532 PC:  45 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 262 SP: 3981 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 533 PC:  45 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 262 SP: 3981 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 534 PC:  46 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 535 PC:  46 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 536 PC:  46 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3980 RG_ALU:   1 SP: 3981 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 537 PC:  47 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 538 PC:  47 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3981 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 539 PC:  47 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 539 PC:  47 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU:   1 SP: 3980 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 540 PC:  48 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU: 261 SP: 3980 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 541 PC:  48 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3981 RG_ALU: 261 SP: 3980 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 542 PC:  48 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3981 RG_ALU: 261 SP: 3980 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 543 PC:  48 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3981 RG_ALU:   9 SP: 3980 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 544 PC:  48 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3981 RG_ALU:   9 SP: 3980 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 545 PC:  48 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3981 RG_ALU:   9 SP: 3980 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 546 PC:  49 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU:   9 SP: 3980 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 547 PC:  49 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU:   9 SP: 3980 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 548 PC:  49 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU:   9 SP: 3979 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 548 PC:  49 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU:   9 SP: 3979 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 549 PC:  50 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU: 262 SP: 3979 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 550 PC:  50 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3980 RG_ALU: 262 SP: 3979 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 551 PC:  50 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3980 RG_ALU: 262 SP: 3979 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 552 PC:  50 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3980 RG_ALU: 115 SP: 3979 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 553 PC:  50 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3980 RG_ALU: 115 SP: 3979 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 554 PC:  50 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3980 RG_ALU: 115 SP: 3979 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 555 PC:  51 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3979 RG_ALU: 115 SP: 3979 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 556 PC:  51 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3979 RG_ALU: 115 SP: 3979 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 557 PC:  51 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU: 115 SP: 3979 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 558 PC:  51 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU:   9 SP: 3979 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 559 PC:  51 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU:   9 SP: 3979 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 560 PC:  51 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU:   9 SP: 3979 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 561 PC:  52 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU:   1 SP: 3979 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 562 PC:  52 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3979 RG_ALU:   1 SP: 3979 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 563 PC:  52 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3979 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 564 PC:  53 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3979 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 565 PC:  53 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3979 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 566 PC:  53 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3978 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 566 PC:  53 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3978 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 567 PC:  54 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3978 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 568 PC:  54 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3978 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 569 PC:  54 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   1 SP: 3978 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 570 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU: 261 SP: 3978 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 571 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU: 261 SP: 3978 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 572 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU: 261 SP: 3978 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 573 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU: 3979 RG_ALU:   9 SP: 3978 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 573 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU:   1 RG_ALU:   9 SP: 3978 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 574 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 1 LG_ALU:   1 RG_ALU:   9 SP: 3978 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 575 PC:  55 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU:   1 RG_ALU:   9 SP: 3978 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 576 PC:  56 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3978 RG_ALU:   9 SP: 3978 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 577 PC:  56 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3978 RG_ALU:   9 SP: 3978 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 578 PC:  56 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3978 RG_ALU:   9 SP: 3977 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 578 PC:  56 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3978 RG_ALU:   9 SP: 3977 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 579 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3977 RG_ALU:   9 SP: 3977 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 580 PC:  57 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3977 RG_ALU:   9 SP: 3977 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 581 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:   9 SP: 3977 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 582 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:   9 SP: 3977 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 583 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:   9 SP: 3978 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 583 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:  10 SP: 3978 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 584 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:  10 SP: 3978 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 585 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:  10 SP: 3978 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 586 PC:  58 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU: 261 SP: 3978 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 587 PC:  58 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU: 261 SP: 3978 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 588 PC:  58 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU: 261 SP: 3978 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 589 PC:  59 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:   1 SP: 3978 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 590 PC:  59 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:   1 SP: 3978 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 591 PC:  59 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3978 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 592 PC:  60 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3978 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 593 PC:  60 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3978 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 594 PC:  60 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3977 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 594 PC:  60 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3977 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 595 PC:  61 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 596 PC:  61 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 597 PC:  61 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 598 PC:  62 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU: 262 SP: 3977 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 599 PC:  62 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3978 RG_ALU: 262 SP: 3977 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 600 PC:  62 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3978 RG_ALU: 262 SP: 3977 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 601 PC:  62 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3978 RG_ALU: 115 SP: 3977 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 601 PC:  62 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU:   1 RG_ALU: 115 SP: 3977 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 602 PC:  62 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU:   1 RG_ALU: 115 SP: 3977 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 603 PC:  62 ADDR:   0 MEM_OUT: 115 ACC: -114 LG_ALU:   1 RG_ALU: 115 SP: 3977 ZF: 0 |	sub   <
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 604 PC:  64 ADDR:   0 MEM_OUT: 115 ACC: -114 LG_ALU:   1 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 605 PC:  64 ADDR:   0 MEM_OUT: 115 ACC: -114 LG_ALU:   1 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 606 PC:  64 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU:   1 RG_ALU:   1 SP: 3977 ZF: 0 |	load   <
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 608 PC:  67 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 0 |	push   <
+  ALU_RES = SP - 1
+  TICK: 609 PC:  67 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 610 PC:  67 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 610 PC:  67 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 611 PC:  68 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 612 PC:  68 ADDR:   0 MEM_OUT: 115 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 613 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 614 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 615 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 615 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 616 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	pop
+  ALU_RES -> ACC
+  TICK: 617 PC:  68 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	pop
+  ADDR -> PC
+  get IO module port
+  TICK: 619 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	input   get_prim
+  INPUT -> ALU_LG
+  TICK: 620 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU:   0 RG_ALU:   1 SP: 3977 ZF: 0 |	input   get_prim
+  ALU_RES = ALU_LG
+  TICK: 621 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 1 LG_ALU:   0 RG_ALU:   1 SP: 3977 ZF: 1 |	input   get_prim
+  ALU_RES -> ACC
+  TICK: 622 PC:  42 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU:   0 RG_ALU:   1 SP: 3977 ZF: 1 |	input   get_prim
+  SP -> ALU_LG
+  TICK: 623 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 1 |	push   get_prim
+  ALU_RES = SP - 1
+  TICK: 624 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 0 |	push   get_prim
+  ALU_RES -> SP
+  TICK: 625 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   get_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 625 PC:  43 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   get_prim
+  SP -> ALU_LG
+  TICK: 626 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 627 PC:  44 ADDR:   0 MEM_OUT: 1 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 628 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 629 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3976 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 630 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 630 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   0 SP: 3977 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 631 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   0 SP: 3977 ZF: 1 |	pop   var
+  ALU_RES -> ACC
+  TICK: 632 PC:  44 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   0 SP: 3977 ZF: 1 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 633 PC:  45 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU: 262 SP: 3977 ZF: 1 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 634 PC:  45 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU: 262 SP: 3977 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 635 PC:  45 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU: 262 SP: 3977 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 636 PC:  46 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 637 PC:  46 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 638 PC:  46 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3976 RG_ALU:   1 SP: 3977 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 639 PC:  47 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 640 PC:  47 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3977 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 641 PC:  47 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 641 PC:  47 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU:   1 SP: 3976 ZF: 0 |	push   var
+  ADDR -> ALU_RG
+  TICK: 642 PC:  48 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU: 261 SP: 3976 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 643 PC:  48 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3977 RG_ALU: 261 SP: 3976 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 644 PC:  48 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3977 RG_ALU: 261 SP: 3976 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 645 PC:  48 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3977 RG_ALU:  10 SP: 3976 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 646 PC:  48 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3977 RG_ALU:  10 SP: 3976 ZF: 0 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 647 PC:  48 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3977 RG_ALU:  10 SP: 3976 ZF: 0 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 648 PC:  49 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU:  10 SP: 3976 ZF: 0 |	push   store_prim
+  ALU_RES = SP - 1
+  TICK: 649 PC:  49 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU:  10 SP: 3976 ZF: 0 |	push   store_prim
+  ALU_RES -> SP
+  TICK: 650 PC:  49 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU:  10 SP: 3975 ZF: 0 |	push   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 650 PC:  49 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU:  10 SP: 3975 ZF: 0 |	push   store_prim
+  ADDR -> ALU_RG
+  TICK: 651 PC:  50 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU: 262 SP: 3975 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 652 PC:  50 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3976 RG_ALU: 262 SP: 3975 ZF: 0 |	load   store_prim
+  READ MEM[ALU]
+  TICK: 653 PC:  50 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3976 RG_ALU: 262 SP: 3975 ZF: 0 |	load   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 654 PC:  50 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3976 RG_ALU:   0 SP: 3975 ZF: 0 |	load   store_prim
+  ALU_RES = ALU_RG
+  TICK: 655 PC:  50 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3976 RG_ALU:   0 SP: 3975 ZF: 1 |	load   store_prim
+  ALU_RES -> ACC
+  TICK: 656 PC:  50 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3976 RG_ALU:   0 SP: 3975 ZF: 1 |	load   store_prim
+  SP -> ALU_LG
+  TICK: 657 PC:  51 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3975 RG_ALU:   0 SP: 3975 ZF: 1 |	store   store_prim
+  ALU_RES = ALU_LG
+  TICK: 658 PC:  51 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3975 RG_ALU:   0 SP: 3975 ZF: 0 |	store   store_prim
+  READ MEM[ALU]
+  TICK: 659 PC:  51 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:   0 SP: 3975 ZF: 0 |	store   store_prim
+  MEM[ALU] -> ALU_RG
+  TICK: 660 PC:  51 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:  10 SP: 3975 ZF: 0 |	store   store_prim
+  ALU_RES = ALU_RG
+  TICK: 661 PC:  51 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:  10 SP: 3975 ZF: 0 |	store   store_prim
+  WRITE ACC -> MEM[ALU]
+  TICK: 662 PC:  51 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:  10 SP: 3975 ZF: 0 |	store   store_prim
+  NUM -> ALU_RG
+  TICK: 663 PC:  52 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:   1 SP: 3975 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 664 PC:  52 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3975 RG_ALU:   1 SP: 3975 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 665 PC:  52 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3975 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 666 PC:  53 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3975 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 667 PC:  53 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3975 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 668 PC:  53 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3974 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 668 PC:  53 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3974 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 669 PC:  54 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3974 ZF: 0 |	load   +
+  ALU_RES = ALU_RG
+  TICK: 670 PC:  54 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3974 ZF: 0 |	load   +
+  ALU_RES -> ACC
+  TICK: 671 PC:  54 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:   1 SP: 3974 ZF: 0 |	load   +
+  ADDR -> ALU_RG
+  TICK: 672 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU: 261 SP: 3974 ZF: 0 |	add   +
+  ALU_RES = ALU_RG
+  TICK: 673 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU: 261 SP: 3974 ZF: 0 |	add   +
+  READ MEM[ALU]
+  TICK: 674 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU: 261 SP: 3974 ZF: 0 |	add   +
+  MEM[ALU] -> ALU_RG
+  TICK: 675 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU: 3975 RG_ALU:  10 SP: 3974 ZF: 0 |	add   +
+  ACC -> ALU_LG
+  TICK: 675 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU:   1 RG_ALU:  10 SP: 3974 ZF: 0 |	add   +
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 676 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 1 LG_ALU:   1 RG_ALU:  10 SP: 3974 ZF: 0 |	add   +
+  ALU_RES -> ACC
+  TICK: 677 PC:  55 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU:   1 RG_ALU:  10 SP: 3974 ZF: 0 |	add   +
+  SP -> ALU_LG
+  TICK: 678 PC:  56 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3974 RG_ALU:  10 SP: 3974 ZF: 0 |	push   +
+  ALU_RES = SP - 1
+  TICK: 679 PC:  56 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3974 RG_ALU:  10 SP: 3974 ZF: 0 |	push   +
+  ALU_RES -> SP
+  TICK: 680 PC:  56 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3974 RG_ALU:  10 SP: 3973 ZF: 0 |	push   +
+  WRITE ACC -> MEM[ALU]
+  TICK: 680 PC:  56 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3974 RG_ALU:  10 SP: 3973 ZF: 0 |	push   +
+  SP -> ALU_LG
+  TICK: 681 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3973 RG_ALU:  10 SP: 3973 ZF: 0 |	pop   var
+  ALU_RES = ALU_LG
+  TICK: 682 PC:  57 ADDR:   0 MEM_OUT: 10 ACC: 11 LG_ALU: 3973 RG_ALU:  10 SP: 3973 ZF: 0 |	pop   var
+  READ MEM[ALU]
+  TICK: 683 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  10 SP: 3973 ZF: 0 |	pop   var
+  ALU_RES = SP + 1
+  TICK: 684 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  10 SP: 3973 ZF: 0 |	pop   var
+  ALU_RES -> SP
+  TICK: 685 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  10 SP: 3974 ZF: 0 |	pop   var
+  MEM[ALU] -> ALU_RG
+  TICK: 685 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  11 SP: 3974 ZF: 0 |	pop   var
+  ALU_RES = ALU_RG
+  TICK: 686 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  11 SP: 3974 ZF: 0 |	pop   var
+  ALU_RES -> ACC
+  TICK: 687 PC:  57 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:  11 SP: 3974 ZF: 0 |	pop   var
+  ADDR -> ALU_RG
+  TICK: 688 PC:  58 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU: 261 SP: 3974 ZF: 0 |	store   var
+  ALU_RES = ALU_RG
+  TICK: 689 PC:  58 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU: 261 SP: 3974 ZF: 0 |	store   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 690 PC:  58 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU: 261 SP: 3974 ZF: 0 |	store   var
+  NUM -> ALU_RG
+  TICK: 691 PC:  59 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:   1 SP: 3974 ZF: 0 |	load   var
+  ALU_RES = ALU_RG
+  TICK: 692 PC:  59 ADDR:   0 MEM_OUT: 11 ACC: 11 LG_ALU: 3973 RG_ALU:   1 SP: 3974 ZF: 0 |	load   var
+  ALU_RES -> ACC
+  TICK: 693 PC:  59 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3973 RG_ALU:   1 SP: 3974 ZF: 0 |	load   var
+  SP -> ALU_LG
+  TICK: 694 PC:  60 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3974 ZF: 0 |	push   var
+  ALU_RES = SP - 1
+  TICK: 695 PC:  60 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3974 ZF: 0 |	push   var
+  ALU_RES -> SP
+  TICK: 696 PC:  60 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3973 ZF: 0 |	push   var
+  WRITE ACC -> MEM[ALU]
+  TICK: 696 PC:  60 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3973 ZF: 0 |	push   var
+  NUM -> ALU_RG
+  TICK: 697 PC:  61 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3973 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 698 PC:  61 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3973 ZF: 0 |	load   <
+  ALU_RES -> ACC
+  TICK: 699 PC:  61 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU:   1 SP: 3973 ZF: 0 |	load   <
+  ADDR -> ALU_RG
+  TICK: 700 PC:  62 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU: 262 SP: 3973 ZF: 0 |	sub   <
+  ALU_RES = ALU_RG
+  TICK: 701 PC:  62 ADDR:   0 MEM_OUT: 11 ACC: 1 LG_ALU: 3974 RG_ALU: 262 SP: 3973 ZF: 0 |	sub   <
+  READ MEM[ALU]
+  TICK: 702 PC:  62 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3974 RG_ALU: 262 SP: 3973 ZF: 0 |	sub   <
+  MEM[ALU] -> ALU_RG
+  TICK: 703 PC:  62 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3974 RG_ALU:   0 SP: 3973 ZF: 0 |	sub   <
+  ACC -> ALU_LG
+  TICK: 703 PC:  62 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 0 |	sub   <
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 704 PC:  62 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 0 |	sub   <
+  ALU_RES -> ACC
+  TICK: 705 PC:  62 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 0 |	sub   <
+  ADDR -> PC
+  NUM -> ALU_RG
+  TICK: 707 PC:  66 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 0 |	load   <
+  ALU_RES = ALU_RG
+  TICK: 708 PC:  66 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 1 |	load   <
+  ALU_RES -> ACC
+  TICK: 709 PC:  66 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   1 RG_ALU:   0 SP: 3973 ZF: 1 |	load   <
+  SP -> ALU_LG
+  TICK: 710 PC:  67 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3973 RG_ALU:   0 SP: 3973 ZF: 1 |	push   <
+  ALU_RES = SP - 1
+  TICK: 711 PC:  67 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3973 RG_ALU:   0 SP: 3973 ZF: 0 |	push   <
+  ALU_RES -> SP
+  TICK: 712 PC:  67 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3973 RG_ALU:   0 SP: 3972 ZF: 0 |	push   <
+  WRITE ACC -> MEM[ALU]
+  TICK: 712 PC:  67 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3973 RG_ALU:   0 SP: 3972 ZF: 0 |	push   <
+  SP -> ALU_LG
+  TICK: 713 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3972 ZF: 0 |	pop
+  ALU_RES = ALU_LG
+  TICK: 714 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3972 ZF: 0 |	pop
+  READ MEM[ALU]
+  TICK: 715 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3972 ZF: 0 |	pop
+  ALU_RES = SP + 1
+  TICK: 716 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3972 ZF: 0 |	pop
+  ALU_RES -> SP
+  TICK: 717 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3973 ZF: 0 |	pop
+  MEM[ALU] -> ALU_RG
+  TICK: 717 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3973 ZF: 0 |	pop
+  ALU_RES = ALU_RG
+  TICK: 718 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3973 ZF: 1 |	pop
+  ALU_RES -> ACC
+  TICK: 719 PC:  68 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   0 SP: 3973 ZF: 1 |	pop
+  PC + 1 -> PC
+  NUM -> ALU_RG
+  TICK: 720 PC:  70 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   1 SP: 3973 ZF: 1 |	load
+  ALU_RES = ALU_RG
+  TICK: 721 PC:  70 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3972 RG_ALU:   1 SP: 3973 ZF: 0 |	load
+  ALU_RES -> ACC
+  TICK: 722 PC:  70 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3972 RG_ALU:   1 SP: 3973 ZF: 0 |	load
+  SP -> ALU_LG
+  TICK: 723 PC:  71 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   1 SP: 3973 ZF: 0 |	push   while
+  ALU_RES = SP - 1
+  TICK: 724 PC:  71 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   1 SP: 3973 ZF: 0 |	push   while
+  ALU_RES -> SP
+  TICK: 725 PC:  71 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   1 SP: 3972 ZF: 0 |	push   while
+  WRITE ACC -> MEM[ALU]
+  TICK: 725 PC:  71 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   1 SP: 3972 ZF: 0 |	push   while
+  NUM -> ALU_RG
+  TICK: 726 PC:  72 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   5 SP: 3972 ZF: 0 |	load   lisp_read
+  ALU_RES = ALU_RG
+  TICK: 727 PC:  72 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3973 RG_ALU:   5 SP: 3972 ZF: 0 |	load   lisp_read
+  ALU_RES -> ACC
+  TICK: 728 PC:  72 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3973 RG_ALU:   5 SP: 3972 ZF: 0 |	load   lisp_read
+  SP -> ALU_LG
+  TICK: 729 PC:  73 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   5 SP: 3972 ZF: 0 |	push   lisp_read
+  ALU_RES = SP - 1
+  TICK: 730 PC:  73 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   5 SP: 3972 ZF: 0 |	push   lisp_read
+  ALU_RES -> SP
+  TICK: 731 PC:  73 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   5 SP: 3971 ZF: 0 |	push   lisp_read
+  WRITE ACC -> MEM[ALU]
+  TICK: 731 PC:  73 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   5 SP: 3971 ZF: 0 |	push   lisp_read
+  NUM -> ALU_RG
+  TICK: 732 PC:  74 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   1 SP: 3971 ZF: 0 |	load   var_input
+  ALU_RES = ALU_RG
+  TICK: 733 PC:  74 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3972 RG_ALU:   1 SP: 3971 ZF: 0 |	load   var_input
+  ALU_RES -> ACC
+  TICK: 734 PC:  74 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3972 RG_ALU:   1 SP: 3971 ZF: 0 |	load   var_input
+  SP -> ALU_LG
+  TICK: 735 PC:  75 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU:   1 SP: 3971 ZF: 0 |	push   var_input
+  ALU_RES = SP - 1
+  TICK: 736 PC:  75 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU:   1 SP: 3971 ZF: 0 |	push   var_input
+  ALU_RES -> SP
+  TICK: 737 PC:  75 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU:   1 SP: 3970 ZF: 0 |	push   var_input
+  WRITE ACC -> MEM[ALU]
+  TICK: 737 PC:  75 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU:   1 SP: 3970 ZF: 0 |	push   var_input
+  NUM -> ALU_RG
+  TICK: 738 PC:  76 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU: 104 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 739 PC:  76 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU: 104 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 740 PC:  76 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU: 3971 RG_ALU: 104 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 741 PC:  77 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU: 3971 RG_ALU: 104 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 742 PC:  77 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU: 3971 RG_ALU: 104 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 743 PC:  78 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU: 3971 RG_ALU: 101 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 744 PC:  78 ADDR:   0 MEM_OUT: 0 ACC: 104 LG_ALU: 3971 RG_ALU: 101 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 745 PC:  78 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU: 3971 RG_ALU: 101 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 746 PC:  79 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU: 3971 RG_ALU: 101 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 747 PC:  79 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU: 3971 RG_ALU: 101 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 748 PC:  80 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 749 PC:  80 ADDR:   0 MEM_OUT: 0 ACC: 101 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 750 PC:  80 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 751 PC:  81 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 752 PC:  81 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 753 PC:  82 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 754 PC:  82 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 755 PC:  82 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 756 PC:  83 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 757 PC:  83 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 108 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 758 PC:  84 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 111 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 759 PC:  84 ADDR:   0 MEM_OUT: 0 ACC: 108 LG_ALU: 3971 RG_ALU: 111 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 760 PC:  84 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU: 3971 RG_ALU: 111 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 761 PC:  85 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU: 3971 RG_ALU: 111 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 762 PC:  85 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU: 3971 RG_ALU: 111 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 763 PC:  86 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU: 3971 RG_ALU:  95 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 764 PC:  86 ADDR:   0 MEM_OUT: 0 ACC: 111 LG_ALU: 3971 RG_ALU:  95 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 765 PC:  86 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU: 3971 RG_ALU:  95 SP: 3970 ZF: 0 |	load   print
+  get IO module port
+  TICK: 766 PC:  87 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU: 3971 RG_ALU:  95 SP: 3970 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 767 PC:  87 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU: 3971 RG_ALU:  95 SP: 3970 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 768 PC:  88 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU: 3971 RG_ALU:   0 SP: 3970 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 769 PC:  88 ADDR:   0 MEM_OUT: 0 ACC: 95 LG_ALU: 3971 RG_ALU:   0 SP: 3970 ZF: 1 |	load   print
+  ALU_RES -> ACC
+  TICK: 770 PC:  88 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3971 RG_ALU:   0 SP: 3970 ZF: 1 |	load   print
+  get IO module port
+  TICK: 771 PC:  89 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3971 RG_ALU:   0 SP: 3970 ZF: 1 |	output   print
+  ACC -> OUTPUT 
+  TICK: 772 PC:  89 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3971 RG_ALU:   0 SP: 3970 ZF: 1 |	output   print
+  NUM -> ALU_RG
+  TICK: 773 PC:  90 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3971 RG_ALU:   1 SP: 3970 ZF: 1 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 774 PC:  90 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3971 RG_ALU:   1 SP: 3970 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 775 PC:  90 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3971 RG_ALU:   1 SP: 3970 ZF: 0 |	load   print
+  SP -> ALU_LG
+  TICK: 776 PC:  91 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   1 SP: 3970 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 777 PC:  91 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   1 SP: 3970 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 778 PC:  91 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 778 PC:  91 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  NUM -> ALU_RG
+  TICK: 779 PC:  92 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   5 SP: 3969 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 780 PC:  92 ADDR:   0 MEM_OUT: 0 ACC: 1 LG_ALU: 3970 RG_ALU:   5 SP: 3969 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 781 PC:  92 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3970 RG_ALU:   5 SP: 3969 ZF: 0 |	load   print
+  SP -> ALU_LG
+  TICK: 782 PC:  93 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3969 RG_ALU:   5 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 783 PC:  93 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3969 RG_ALU:   5 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 784 PC:  93 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3969 RG_ALU:   5 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 784 PC:  93 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3969 RG_ALU:   5 SP: 3968 ZF: 0 |	push   print
+  SP -> ALU_LG
+  TICK: 785 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 786 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 787 PC:  94 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 788 PC:  94 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 789 PC:  94 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 790 PC:  94 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 791 PC:  94 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 792 PC:  94 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3968 RG_ALU:  98 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 793 PC:  94 ADDR:   0 MEM_OUT: 98 ACC: 5 LG_ALU: 3968 RG_ALU:  98 SP: 3968 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 794 PC:  94 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:  98 SP: 3968 ZF: 0 |	load   print
+  get IO module port
+  TICK: 795 PC:  95 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:  98 SP: 3968 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 796 PC:  95 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:  98 SP: 3968 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 797 PC:  96 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ACC -> ALU_LG
+  TICK: 797 PC:  96 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU:  98 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 798 PC:  96 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU:  98 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES -> ACC
+  TICK: 799 PC:  96 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU:  98 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  PC + 1 -> PC
+  SP -> ALU_LG
+  TICK: 800 PC:  98 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 801 PC:  98 ADDR:   0 MEM_OUT: 98 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 802 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 803 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 804 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 804 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3968 RG_ALU:   5 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 805 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 98 LG_ALU: 3968 RG_ALU:   5 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 806 PC:  98 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3968 RG_ALU:   5 SP: 3969 ZF: 0 |	pop   print
+  NUM -> ALU_RG
+  TICK: 807 PC:  99 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU: 3968 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ACC -> ALU_LG
+  TICK: 807 PC:  99 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU:   5 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 808 PC:  99 ADDR:   0 MEM_OUT: 5 ACC: 5 LG_ALU:   5 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES -> ACC
+  TICK: 809 PC:  99 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU:   5 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  SP -> ALU_LG
+  TICK: 810 PC: 100 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 811 PC: 100 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 812 PC: 100 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 812 PC: 100 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 814 PC:  94 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 815 PC:  94 ADDR:   0 MEM_OUT: 5 ACC: 6 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 816 PC:  94 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 817 PC:  94 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3968 RG_ALU:   6 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 818 PC:  94 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3968 RG_ALU:   6 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 819 PC:  94 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3968 RG_ALU:   6 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 820 PC:  94 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3968 RG_ALU:   6 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 821 PC:  94 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3968 RG_ALU: 111 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 822 PC:  94 ADDR:   0 MEM_OUT: 111 ACC: 6 LG_ALU: 3968 RG_ALU: 111 SP: 3968 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 823 PC:  94 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU: 111 SP: 3968 ZF: 0 |	load   print
+  get IO module port
+  TICK: 824 PC:  95 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU: 111 SP: 3968 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 825 PC:  95 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU: 111 SP: 3968 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 826 PC:  96 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ACC -> ALU_LG
+  TICK: 826 PC:  96 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 111 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 827 PC:  96 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 111 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES -> ACC
+  TICK: 828 PC:  96 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 111 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  PC + 1 -> PC
+  SP -> ALU_LG
+  TICK: 829 PC:  98 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 830 PC:  98 ADDR:   0 MEM_OUT: 111 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 831 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 832 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 833 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 833 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3968 RG_ALU:   6 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 834 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 111 LG_ALU: 3968 RG_ALU:   6 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 835 PC:  98 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3968 RG_ALU:   6 SP: 3969 ZF: 0 |	pop   print
+  NUM -> ALU_RG
+  TICK: 836 PC:  99 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU: 3968 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ACC -> ALU_LG
+  TICK: 836 PC:  99 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU:   6 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 837 PC:  99 ADDR:   0 MEM_OUT: 6 ACC: 6 LG_ALU:   6 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES -> ACC
+  TICK: 838 PC:  99 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU:   6 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  SP -> ALU_LG
+  TICK: 839 PC: 100 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 840 PC: 100 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 841 PC: 100 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 841 PC: 100 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 843 PC:  94 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 844 PC:  94 ADDR:   0 MEM_OUT: 6 ACC: 7 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 845 PC:  94 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 846 PC:  94 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3968 RG_ALU:   7 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 847 PC:  94 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3968 RG_ALU:   7 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 848 PC:  94 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3968 RG_ALU:   7 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 849 PC:  94 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3968 RG_ALU:   7 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 850 PC:  94 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3968 RG_ALU: 114 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 851 PC:  94 ADDR:   0 MEM_OUT: 114 ACC: 7 LG_ALU: 3968 RG_ALU: 114 SP: 3968 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 852 PC:  94 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU: 114 SP: 3968 ZF: 0 |	load   print
+  get IO module port
+  TICK: 853 PC:  95 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU: 114 SP: 3968 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 854 PC:  95 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU: 114 SP: 3968 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 855 PC:  96 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ACC -> ALU_LG
+  TICK: 855 PC:  96 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 114 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 856 PC:  96 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 114 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES -> ACC
+  TICK: 857 PC:  96 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 114 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  PC + 1 -> PC
+  SP -> ALU_LG
+  TICK: 858 PC:  98 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 859 PC:  98 ADDR:   0 MEM_OUT: 114 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 860 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 861 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 862 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 862 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3968 RG_ALU:   7 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 863 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 114 LG_ALU: 3968 RG_ALU:   7 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 864 PC:  98 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3968 RG_ALU:   7 SP: 3969 ZF: 0 |	pop   print
+  NUM -> ALU_RG
+  TICK: 865 PC:  99 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU: 3968 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ACC -> ALU_LG
+  TICK: 865 PC:  99 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU:   7 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 866 PC:  99 ADDR:   0 MEM_OUT: 7 ACC: 7 LG_ALU:   7 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES -> ACC
+  TICK: 867 PC:  99 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU:   7 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  SP -> ALU_LG
+  TICK: 868 PC: 100 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 869 PC: 100 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 870 PC: 100 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 870 PC: 100 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 872 PC:  94 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 873 PC:  94 ADDR:   0 MEM_OUT: 7 ACC: 8 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 874 PC:  94 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 875 PC:  94 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3968 RG_ALU:   8 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 876 PC:  94 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3968 RG_ALU:   8 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 877 PC:  94 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3968 RG_ALU:   8 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 878 PC:  94 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3968 RG_ALU:   8 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 879 PC:  94 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3968 RG_ALU: 105 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 880 PC:  94 ADDR:   0 MEM_OUT: 105 ACC: 8 LG_ALU: 3968 RG_ALU: 105 SP: 3968 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 881 PC:  94 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU: 105 SP: 3968 ZF: 0 |	load   print
+  get IO module port
+  TICK: 882 PC:  95 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU: 105 SP: 3968 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 883 PC:  95 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU: 105 SP: 3968 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 884 PC:  96 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ACC -> ALU_LG
+  TICK: 884 PC:  96 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 105 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 885 PC:  96 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 105 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES -> ACC
+  TICK: 886 PC:  96 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 105 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  PC + 1 -> PC
+  SP -> ALU_LG
+  TICK: 887 PC:  98 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 888 PC:  98 ADDR:   0 MEM_OUT: 105 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 889 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 890 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 891 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 891 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3968 RG_ALU:   8 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 892 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 105 LG_ALU: 3968 RG_ALU:   8 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 893 PC:  98 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3968 RG_ALU:   8 SP: 3969 ZF: 0 |	pop   print
+  NUM -> ALU_RG
+  TICK: 894 PC:  99 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU: 3968 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ACC -> ALU_LG
+  TICK: 894 PC:  99 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU:   8 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 895 PC:  99 ADDR:   0 MEM_OUT: 8 ACC: 8 LG_ALU:   8 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES -> ACC
+  TICK: 896 PC:  99 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU:   8 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  SP -> ALU_LG
+  TICK: 897 PC: 100 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 898 PC: 100 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 899 PC: 100 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 899 PC: 100 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 901 PC:  94 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 902 PC:  94 ADDR:   0 MEM_OUT: 8 ACC: 9 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 903 PC:  94 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 904 PC:  94 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3968 RG_ALU:   9 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 905 PC:  94 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3968 RG_ALU:   9 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 906 PC:  94 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3968 RG_ALU:   9 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 907 PC:  94 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3968 RG_ALU:   9 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 908 PC:  94 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3968 RG_ALU: 115 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 909 PC:  94 ADDR:   0 MEM_OUT: 115 ACC: 9 LG_ALU: 3968 RG_ALU: 115 SP: 3968 ZF: 0 |	load   print
+  ALU_RES -> ACC
+  TICK: 910 PC:  94 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU: 115 SP: 3968 ZF: 0 |	load   print
+  get IO module port
+  TICK: 911 PC:  95 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU: 115 SP: 3968 ZF: 0 |	output   print
+  ACC -> OUTPUT 
+  TICK: 912 PC:  95 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU: 115 SP: 3968 ZF: 0 |	output   print
+  NUM -> ALU_RG
+  TICK: 913 PC:  96 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ACC -> ALU_LG
+  TICK: 913 PC:  96 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 115 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 914 PC:  96 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 115 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  ALU_RES -> ACC
+  TICK: 915 PC:  96 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 115 RG_ALU:   0 SP: 3968 ZF: 0 |	sub   print
+  PC + 1 -> PC
+  SP -> ALU_LG
+  TICK: 916 PC:  98 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 917 PC:  98 ADDR:   0 MEM_OUT: 115 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 918 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 919 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 920 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 920 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3968 RG_ALU:   9 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 921 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 115 LG_ALU: 3968 RG_ALU:   9 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 922 PC:  98 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3968 RG_ALU:   9 SP: 3969 ZF: 0 |	pop   print
+  NUM -> ALU_RG
+  TICK: 923 PC:  99 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU: 3968 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ACC -> ALU_LG
+  TICK: 923 PC:  99 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU:   9 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 924 PC:  99 ADDR:   0 MEM_OUT: 9 ACC: 9 LG_ALU:   9 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  ALU_RES -> ACC
+  TICK: 925 PC:  99 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU:   9 RG_ALU:   1 SP: 3969 ZF: 0 |	add   print
+  SP -> ALU_LG
+  TICK: 926 PC: 100 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES = SP - 1
+  TICK: 927 PC: 100 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3969 RG_ALU:   1 SP: 3969 ZF: 0 |	push   print
+  ALU_RES -> SP
+  TICK: 928 PC: 100 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  WRITE ACC -> MEM[ALU]
+  TICK: 928 PC: 100 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3969 RG_ALU:   1 SP: 3968 ZF: 0 |	push   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 930 PC:  94 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_LG
+  TICK: 931 PC:  94 ADDR:   0 MEM_OUT: 9 ACC: 10 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 932 PC:  94 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3968 RG_ALU:   1 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 933 PC:  94 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3968 RG_ALU:  10 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 934 PC:  94 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3968 RG_ALU:  10 SP: 3968 ZF: 0 |	load   print
+  READ MEM[ALU]
+  TICK: 935 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3968 RG_ALU:  10 SP: 3968 ZF: 0 |	load   print
+  READd MEM[ALU]
+  TICK: 936 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3968 RG_ALU:  10 SP: 3968 ZF: 0 |	load   print
+  MEM[ALU] -> ALU_RG
+  TICK: 937 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	load   print
+  ALU_RES = ALU_RG
+  TICK: 938 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 10 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	load   print
+  ALU_RES -> ACC
+  TICK: 939 PC:  94 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	load   print
+  get IO module port
+  TICK: 940 PC:  95 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	output   print
+  ACC -> OUTPUT 
+  TICK: 941 PC:  95 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	output   print
+  NUM -> ALU_RG
+  TICK: 942 PC:  96 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	sub   print
+  ACC -> ALU_LG
+  TICK: 942 PC:  96 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 3968 ZF: 1 |	sub   print
+  ALU_RES = ALU_LG + ALU_RG
+  TICK: 943 PC:  96 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 3968 ZF: 1 |	sub   print
+  ALU_RES -> ACC
+  TICK: 944 PC:  96 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU:   0 RG_ALU:   0 SP: 3968 ZF: 1 |	sub   print
+  ADDR -> PC
+  SP -> ALU_LG
+  TICK: 946 PC: 102 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 1 |	pop   print
+  ALU_RES = ALU_LG
+  TICK: 947 PC: 102 ADDR:   0 MEM_OUT: 0 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  READ MEM[ALU]
+  TICK: 948 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES = SP + 1
+  TICK: 949 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3968 ZF: 0 |	pop   print
+  ALU_RES -> SP
+  TICK: 950 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3968 RG_ALU:   0 SP: 3969 ZF: 0 |	pop   print
+  MEM[ALU] -> ALU_RG
+  TICK: 950 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3968 RG_ALU:  10 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES = ALU_RG
+  TICK: 951 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 0 LG_ALU: 3968 RG_ALU:  10 SP: 3969 ZF: 0 |	pop   print
+  ALU_RES -> ACC
+  TICK: 952 PC: 102 ADDR:   0 MEM_OUT: 10 ACC: 10 LG_ALU: 3968 RG_ALU:  10 SP: 3969 ZF: 0 |	pop   print
+  Well done!
+  output_buffer: ['v', 'v', 'e', 'd', 'i', 't', 'e', '_', 'y', 'o', 'u', 'r', '_', 'n', 'a', 'm', 'e', '0', 'h', 'e', 'l', 'l', 'o', '_', '0', 'b', 'o', 'r', 'i', 's', '0']
+  vvedite_your_name0hello_0boris0
+  instr_counter:  272 ticks: 952
