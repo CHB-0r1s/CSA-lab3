@@ -233,19 +233,21 @@ def test_execute_program_1():
 
 
 def test_execute_program_4():
-    instructions = [{'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '2'},
-                    {'opcode': 'add', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'add', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '3'},
-                    {'opcode': 'add', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'add', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'halt', 'addr_mod': 'non_addr', 'addr': None}]
+    instructions = [
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "2"},
+        {"opcode": "add", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "add", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "3"},
+        {"opcode": "add", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "add", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "halt", "addr_mod": "non_addr", "addr": None},
+    ]
 
     dp = DataPath(10, ["H", "i", " ", "W", "!", "T"], [])
     cu = ControlUnit(instructions, dp)
@@ -259,19 +261,21 @@ def test_execute_program_4():
 
 def test_execute_program_5():
     print("\n")
-    instructions = [{'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '2'},
-                    {'opcode': 'sub', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'add', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '3'},
-                    {'opcode': 'sub', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'add', 'addr_mod': 'tos_addr', 'addr': None},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'halt', 'addr_mod': 'non_addr', 'addr': None}]
+    instructions = [
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "2"},
+        {"opcode": "sub", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "add", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "3"},
+        {"opcode": "sub", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "add", "addr_mod": "tos_addr", "addr": None},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "halt", "addr_mod": "non_addr", "addr": None},
+    ]
 
     dp = DataPath(10, ["H", "i", " ", "W", "!", "T"], [])
     cu = ControlUnit(instructions, dp)
@@ -285,15 +289,17 @@ def test_execute_program_5():
 
 def test_execute_program_eq():
     print("\n")
-    instructions = [{'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'sub', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'jump_if_zero', 'addr_mod': 'non_addr', 'addr': 4},
-                    {'opcode': 'jump_if_not_zero', 'addr_mod': 'non_addr', 'addr': 6},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': 1},
-                    {'opcode': 'jump', 'addr_mod': 'non_addr', 'addr': 7},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': 0},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'halt', 'addr_mod': 'non_addr', 'addr': None}]
+    instructions = [
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "sub", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": 4},
+        {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": 6},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": 1},
+        {"opcode": "jump", "addr_mod": "non_addr", "addr": 7},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": 0},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "halt", "addr_mod": "non_addr", "addr": None},
+    ]
 
     dp = DataPath(10, ["H", "i", " ", "W", "!", "T"], [])
     cu = ControlUnit(instructions, dp)
@@ -307,15 +313,17 @@ def test_execute_program_eq():
 
 def test_execute_program_not_eq():
     print("\n")
-    instructions = [{'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': '1'},
-                    {'opcode': 'sub', 'addr_mod': 'nep_addr', 'addr': '2'},
-                    {'opcode': 'jump_if_zero', 'addr_mod': 'non_addr', 'addr': 4},
-                    {'opcode': 'jump_if_not_zero', 'addr_mod': 'non_addr', 'addr': 6},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': 1},
-                    {'opcode': 'jump', 'addr_mod': 'non_addr', 'addr': 7},
-                    {'opcode': 'load', 'addr_mod': 'nep_addr', 'addr': 0},
-                    {'opcode': 'push', 'addr_mod': 'non_addr', 'addr': None},
-                    {'opcode': 'halt', 'addr_mod': 'non_addr', 'addr': None}]
+    instructions = [
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": "1"},
+        {"opcode": "sub", "addr_mod": "nep_addr", "addr": "2"},
+        {"opcode": "jump_if_zero", "addr_mod": "non_addr", "addr": 4},
+        {"opcode": "jump_if_not_zero", "addr_mod": "non_addr", "addr": 6},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": 1},
+        {"opcode": "jump", "addr_mod": "non_addr", "addr": 7},
+        {"opcode": "load", "addr_mod": "nep_addr", "addr": 0},
+        {"opcode": "push", "addr_mod": "non_addr", "addr": None},
+        {"opcode": "halt", "addr_mod": "non_addr", "addr": None},
+    ]
 
     dp = DataPath(10, ["H", "i", " ", "W", "!", "T"], [])
     cu = ControlUnit(instructions, dp)

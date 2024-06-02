@@ -19,9 +19,20 @@ jobs:
         run: |
           python -m pip install pytest
           python -m pip install pytest-golden
+          python -m pip install ruff
 
       - name: run pytest
         run: |
           export PYTHONPATH=/home/runner/work/CSA-lab3/CSA-lab3/.
           cd src
           python -m pytest golden_test.py
+
+      - name: ruff
+        run: |
+          python -m ruff format ./src/translator.py
+          python -m ruff format ./src/machine.py
+          python -m ruff format ./src/machine.py
+          python -m ruff check ./src/translator.py
+          python -m ruff check ./src/machine.py
+          python -m ruff check ./src/machine.py
+

@@ -200,17 +200,21 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "ADDR -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.ADD), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.NEP_ADDR:
                     return [
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.ADD), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.TOS_ADDR:
                     return [
@@ -219,10 +223,12 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
-                        [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.ADD), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
             case Opcode.SUB:
                 if addr_mod == AddrType.ABS_ADDR:
@@ -230,17 +236,21 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "ADDR -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.SUB), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.NEP_ADDR:
                     return [
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.SUB), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.TOS_ADDR:
                     return [
@@ -249,24 +259,26 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
-                        [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.SUB), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
             case Opcode.INC:
                 assert addr_mod == AddrType.NON_ADDR, "Неверная адресация, должна быть non_addr"
                 return [
                     [(lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = ALU_LG + 1")],
-                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                 ]
             case Opcode.DEC:
                 assert addr_mod == AddrType.NON_ADDR, "Неверная адресация, должна быть non_addr"
                 return [
                     [(lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.DEC), "ALU_RES = ALU_LG - 1")],
-                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                 ]
             case Opcode.LOAD:
                 if addr_mod == AddrType.ABS_ADDR:
@@ -276,13 +288,13 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.NEP_ADDR:
                     return [
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.CON_TOS_ADDR:
                     return [
@@ -295,7 +307,7 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_read(), "READd MEM[ALU]")],
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
             case Opcode.STORE:
                 if addr_mod == AddrType.CON_TOS_ADDR:
@@ -311,7 +323,7 @@ class ControlUnit:
                 return [
                     [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "ADDR -> ALU_RG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                    [(lambda: self.data_path.signal_write(), "WRITE ACC -> MEM[ALU]")]
+                    [(lambda: self.data_path.signal_write(), "WRITE ACC -> MEM[ALU]")],
                 ]
             case Opcode.POP:
                 return [
@@ -319,29 +331,33 @@ class ControlUnit:
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.LG_PASS), "ALU_RES = ALU_LG")],
                     [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
-                    [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                     (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
+                    [
+                        (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                        (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
+                    ],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                 ]
             case Opcode.PUSH:
                 return [
                     [(lambda: self.data_path.signal_left_fetch(SignalsLeftALU.SP), "SP -> ALU_LG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.DEC), "ALU_RES = SP - 1")],
-                    [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                     (lambda: self.data_path.signal_write(), "WRITE ACC -> MEM[ALU]")]
+                    [
+                        (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                        (lambda: self.data_path.signal_write(), "WRITE ACC -> MEM[ALU]"),
+                    ],
                 ]
             case Opcode.IN:
                 return [
                     [(lambda: None, "get IO module port")],
                     [(lambda: self.data_path.signal_left_fetch(SignalsLeftALU.INPUT), "INPUT -> ALU_LG")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.LG_PASS), "ALU_RES = ALU_LG")],
-                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                 ]
             case Opcode.OUTPUT:
                 return [
                     [(lambda: None, "get IO module port")],
-                    [(lambda: self.data_path.signal_output_write(), "ACC -> OUTPUT ")]
+                    [(lambda: self.data_path.signal_output_write(), "ACC -> OUTPUT ")],
                 ]
             case Opcode.CLH:
                 return [
@@ -350,10 +366,12 @@ class ControlUnit:
                     [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
-                    [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                     (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
+                    [
+                        (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                        (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
+                    ],
                     [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
-                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                    [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                 ]
             case Opcode.MOD:
                 if addr_mod == AddrType.ABS_ADDR:
@@ -361,17 +379,21 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "ADDR -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.RG_PASS), "ALU_RES = ALU_RG")],
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.MOD), "ALU_RES = ALU_LG % ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.NEP_ADDR:
                     return [
-                        [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.signal_right_fetch(SignalsRightALU.OP_COMP), "NUM -> ALU_RG"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.MOD), "ALU_RES = ALU_LG % ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
                 if addr_mod == AddrType.TOS_ADDR:
                     return [
@@ -380,10 +402,12 @@ class ControlUnit:
                         [(lambda: self.data_path.signal_read(), "READ MEM[ALU]")],
                         [(lambda: self.data_path.signal_right_fetch(SignalsRightALU.MEM_OUT), "MEM[ALU] -> ALU_RG")],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.INC), "ALU_RES = SP + 1")],
-                        [(lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
-                         (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG")],
+                        [
+                            (lambda: self.data_path.latch_stack_pointer(), "ALU_RES -> SP"),
+                            (lambda: self.data_path.signal_left_fetch(SignalsLeftALU.ACC), "ACC -> ALU_LG"),
+                        ],
                         [(lambda: self.data_path.signal_inst_fetch(SignalsALU.MOD), "ALU_RES = ALU_LG + ALU_RG")],
-                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")]
+                        [(lambda: self.data_path.latch_acc_value(), "ALU_RES -> ACC")],
                     ]
 
     def decode_and_execute_instruction(self):
@@ -405,24 +429,33 @@ class ControlUnit:
     def __repr__(self):
         """Вернуть строковое представление состояния процессора."""
         state_repr = (
-        "TICK: {:3} PC: {:3} ADDR: {:3} MEM_OUT: {} ACC: {} LG_ALU: {:3} RG_ALU: {:3} SP: {:3} ZF: {} |".format(
-            self._tick,
-            self.program_counter,
-            self.data_path.data_address,
-            self.data_path.latched_data,
-            self.data_path.acc,
-            self.data_path.alu_left_gate,
-            self.data_path.alu_right_gate,
-            self.data_path.stack_pointer,
-            int(self.data_path.zero())
-        ))
+            "TICK: {:3} PC: {:3} ADDR: {:3} MEM_OUT: {} ACC: {} LG_ALU: {:3} RG_ALU: {:3} SP: {:3} ZF: {} |".format(
+                self._tick,
+                self.program_counter,
+                self.data_path.data_address,
+                self.data_path.latched_data,
+                self.data_path.acc,
+                self.data_path.alu_left_gate,
+                self.data_path.alu_right_gate,
+                self.data_path.stack_pointer,
+                int(self.data_path.zero()),
+            )
+        )
 
         # instr = self.program[self.program_counter]
         # opcode = instr["opcode"]
         # instr_repr = str(opcode)
 
-        return (state_repr + "\t" + self.program[self.program_counter]["opcode"] +
-        (("   " + self.program[self.program_counter]["term"]) if "term" in self.program[self.program_counter] else ""))
+        return (
+            state_repr
+            + "\t"
+            + self.program[self.program_counter]["opcode"]
+            + (
+                ("   " + self.program[self.program_counter]["term"])
+                if "term" in self.program[self.program_counter]
+                else ""
+            )
+        )
 
 
 def simulation(code, input_tokens, data_memory_size, limit, data, log_file):
@@ -454,12 +487,7 @@ def main(code_file, input_file, log_file):
             input_token.append(char)
 
     output, instr_counter, ticks = simulation(
-        code=code,
-        data=data,
-        input_tokens=input_token,
-        data_memory_size=4000,
-        limit=10000,
-        log_file=log_file
+        code=code, data=data, input_tokens=input_token, data_memory_size=4000, limit=10000, log_file=log_file
     )
 
     print("".join(output), file=open(log_file, mode="a"))
@@ -468,6 +496,4 @@ def main(code_file, input_file, log_file):
 
 if __name__ == "__main__":
     _, code_file, input_file, log_file = sys.argv
-    main(code_file,
-         input_file,
-         log_file)
+    main(code_file, input_file, log_file)

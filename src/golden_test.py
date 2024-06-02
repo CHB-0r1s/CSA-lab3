@@ -29,4 +29,5 @@ def test_translator_and_machine(golden):
         assert machine_code == golden["out_code"]
         assert logs == golden["out_log"]
 
+
 pytest.main()

@@ -5,5 +5,3 @@ from .translator import translate, MAX_STR_LEN, TERMINATOR
 from .machine import DataPath
 from .machine import ControlUnit
 from .machine import simulation
-
-

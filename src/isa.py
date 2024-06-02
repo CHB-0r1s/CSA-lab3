@@ -28,7 +28,6 @@
 """
 
 import json
-from collections import namedtuple
 from enum import Enum
 
 

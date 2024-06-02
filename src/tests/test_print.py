@@ -59,4 +59,4 @@ def test_print_3():
 
         sp = cu.data_path.stack_pointer
         assert cu.data_path.data_memory[sp] == 1
-        assert '10' in cu.data_path.output_buffer
+        assert "10" in cu.data_path.output_buffer
