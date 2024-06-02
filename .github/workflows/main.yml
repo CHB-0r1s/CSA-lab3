@@ -29,9 +29,6 @@ jobs:
 
       - name: ruff
         run: |
-          python -m ruff format ./src/translator.py
-          python -m ruff format ./src/machine.py
-          python -m ruff format ./src/machine.py
           python -m ruff check ./src/translator.py
           python -m ruff check ./src/machine.py
           python -m ruff check ./src/machine.py
