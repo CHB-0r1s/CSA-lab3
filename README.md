@@ -1,10 +1,3 @@
-# Архитектура компьютера, 3 лабораторная
-## Лузин Борис Евгеньевич P3207
-
-Вариант: lisp -> asm | acc | harv | hw | tick -> instr | struct | stream | port | cstr | prob2 | cache
-
-Базовый вариант: **lisp** | acc | harv | hw | **tick** | struct | stream | port | cstr | prob2
-
 ## Язык программирования - Lisp 
 ### Синтаксис языка
 ```ebnf
